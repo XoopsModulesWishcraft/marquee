@@ -148,7 +148,7 @@ function AddEditMarqueeForm($marqueeid, $Action, $FormTitle, $contentvalue, $bgc
 	$button_tray->addElement($cancel_btn);
 	$sform->addElement($button_tray);
 	$sform->display();
-	echo "<br /><br /><table border='0' width='100%' align='center'><tr><td align='center'><a href='http://xoops.instant-zero.com' target='_blank'><img src='../images/instantzero.gif'></a></td></tr></table>";
+	echo "<br /><br /><table border='0' width='100%' align='center'><tr><td align='center'><a href='http://xoops.instant-zero.com' target='_blank'><img src='../images/xoopsmicrobutton.gif'></a></td></tr></table>";
 }
 
 // ******************************************************************************************************************************************
@@ -219,7 +219,6 @@ switch ($op)
         }
         break;
 
-
 	// Verify before to add an element
     case 'verifytoadd':
 		if ( isset($_POST['submit']) && $_POST['submit'] != '' ) {
@@ -270,8 +269,12 @@ switch ($op)
 		$tblbehaviour = array(_AM_MARQUEE_BEHAVIOUR1,_AM_MARQUEE_BEHAVIOUR2,_AM_MARQUEE_BEHAVIOUR3);
 		if ( count($marqueearray) > 0 ) {
         	foreach($marqueearray as $marquee) {
-				$action_edit="<a href='".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid')."'>"._AM_MARQUEE_EDIT."</a>";
-				$action_delete="<a href='".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid')."'>"._AM_MARQUEE_DELETE."</a>";
+//				$action_edit="<a href='".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid')."'>"._AM_MARQUEE_EDIT."</a>";
+//				$action_delete="<a href='".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid')."'>"._AM_MARQUEE_DELETE."</a>";
+
+                $action_edit="<a href='".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid')."'><img src='../images/edit.png' title='"._AM_MARQUEE_EDIT."'></a>";
+                $action_delete="<a href='".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid')."'><img src='../images/delete.png' title='"._AM_MARQUEE_DELETE."'></a>";
+
 				$direction=$tbldirection[$marquee->getVar('marquee_direction')];
 				$behaviour=$tblbehaviour[$marquee->getVar('marquee_behaviour')];
 				$stop = _YES;
@@ -282,13 +285,13 @@ switch ($op)
 				if($marquee->getVar('marquee_source') == 'fixed') {
 					$source = _AM_MARQUEE_SOURCE_FIXED;
 				}
-				echo "<tr class='".$class."'><td align='center'>" . $marquee->getVar('marquee_marqueeid') . "</td><td align='center'>" . xoops_substr(strip_tags($marquee->getVar('marquee_content')),0,60) . "</td><td align='center'>" . $behaviour . "</td><td align='center'>" . $source . "</td><td align='center'>". $stop . "</td><td align='center'>" . $direction . "</td><td align='center'>" . $action_edit . "&nbsp;-&nbsp;" . $action_delete . "</td></tr>\n";
+				echo "<tr class='".$class."'><td align='center'>" . $marquee->getVar('marquee_marqueeid') . "</td><td align='center'>" . xoops_substr(strip_tags($marquee->getVar('marquee_content')),0,60) . "</td><td align='center'>" . $behaviour . "</td><td align='center'>" . $source . "</td><td align='center'>". $stop . "</td><td align='center'>" . $direction . "</td><td align='center'>" . $action_edit . "&nbsp;&nbsp;" . $action_delete . "</td></tr>\n";
 				$class = ($class == 'even') ? 'odd' : 'even';
         	}
         }
 		echo "<tr class='".$class."'><td colspan='7' align='center'><form name='faddmarquee' method='post' action='index.php'><input type='hidden' name='op' value='addmarquee' /><input type='submit' name='submit' value='"._AM_MARQUEE_ADDMARQUEE."' /></td></tr>";
         echo '</table>';
-        echo "<br /><br /><table border='0' width='100%' align='center'><tr><td align='center'><a href='http://xoops.instant-zero.com' target='_blank'><img src='../images/instantzero.gif'></a></td></tr></table>";
+        echo "<br /><br /><table border='0' width='100%' align='center'><tr><td align='center'><a href='http://xoops.instant-zero.com' target='_blank'><img src='../images/xoopsmicrobutton.gif'></a></td></tr></table>";
         break;
 }
 

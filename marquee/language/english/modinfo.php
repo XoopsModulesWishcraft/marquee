@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,10 +11,10 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * Version : $Id:
  * ****************************************************************************
@@ -50,4 +50,19 @@ define("_MI_MARQUEE_FORM_HTMLAREA","HtmlArea Editor");
 define("_MI_MARQUEE_FORM_FCK","FCK Editor");
 define("_MI_MARQUEE_FORM_KOIVI","Koivi Editor");
 define("_MI_MARQUEE_FORM_TINYEDITOR","TinyEditor");
+
+//2.48
+// index.php
+//define("_AM_MARQUEE_ADMIN_INDEX",                  "Index");
+define("_MI_MARQUEE_ADMIN_ABOUT",                  "About");
+define("_MI_MARQUEE_ADMIN_HELP",                 "Help");
+
+define('_MARQUEE_ADMIN_HOME',"Home"); 
+define("_MARQUEE_ADMIN_HOME_DESC","Go back to Administration module");
+define("_MARQUEE_ADMIN_ABOUT" , "About");
+define("_MARQUEE_ADMIN_ABOUT_DESC" , "About this module");
+define("_MARQUEE_ADMIN_HELP" , "Help");
+define("_MARQUEE_ADMIN_HELP_DESC" , "Module help");
+
+
 ?>

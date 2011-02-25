@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,17 +11,17 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * Version : $Id:
  * ****************************************************************************
  */
 define("_AM_MARQUEE_CONFIG","Marquees Configuration");
 define("_AM_MARQUEE_ID","ID");
-define("_AM_MARQUEE_GENERALSET", "Module's options" );
+define("_AM_MARQUEE_GENERALSET", "Preferences" );
 define("_AM_MARQUEE_MODULEADMIN","Module's administration");
 define("_AM_MARQUEE_DIRECTION","Direction");
 define("_AM_MARQUEE_BEHAVIOUR","Behaviour");
@@ -61,4 +61,34 @@ define("_AM_MARQUEE_SCRDELAY","Delay between<br />two moves in milliseconds");
 define("_AM_MARQUEE_ERROR_MODIFY_DB","Error while updating the database");
 define("_AM_MARQUEE_SOURCE","Content's source");
 define("_AM_MARQUEE_SOURCE_FIXED","A fixed text");
+
+//2.4.8
+
+// About.php
+define("_AM_MARQUEE_ABOUT_RELEASEDATE",        "Update date: ");
+define("_AM_MARQUEE_ABOUT_AUTHOR",                   "Author: ");
+define("_AM_MARQUEE_ABOUT_CREDITS",                  "Credits: ");
+define("_AM_MARQUEE_ABOUT_LICENSE",                  "License: ");
+define("_AM_MARQUEE_ABOUT_MODULE_STATUS",            "Status: ");
+define("_AM_MARQUEE_ABOUT_WEBSITE",                  "Website: ");
+define("_AM_MARQUEE_ABOUT_AUTHOR_NAME",              "Author name: ");
+define("_AM_MARQUEE_ABOUT_CHANGELOG",                "Change Log");
+define("_AM_MARQUEE_ABOUT_MODULE_INFO",              "Module Infos");
+define("_AM_MARQUEE_ABOUT_AUTHOR_INFO",              "Author Infos");
+define("_AM_MARQUEE_ABOUT_DESCRIPTION",          "Description: ");
+
+// index.php
+define("_AM_MARQUEE_ADMIN_INDEX",                  "Index");
+define("_AM_MARQUEE_ADMIN_ABOUT",                  "About");
+define("_AM_MARQUEE_ADMIN_HELP",                 "Help");
+define("_AM_MARQUEE_ADMIN_SLIDES",                 "Slides");
+define("_AM_MARQUEE_ADMIN_PAGES",            "Pages");
+define("_AM_MARQUEE_ADMIN_UPDATE",                 "Update");
+define("_AM_MARQUEE_ADMIN_PREFERENCES",                 "Settings");
+define("_AM_MARQUEE_ADMIN_INDEX_TXT1",                 "This module lets you display on your pages with <strong>\"slideshow \"</strong> images with links to pages on your site or pages externes.<br />By default, the module is delivered with 7 flash slideshow templates, javascript or css, you can naturally incorporate or create new ones <em>(make based on those existing for example)</em> with some knowledge of development");
+
+// text in admin footer
+define("_AM_MARQUEE_ADMIN_FOOTER",                 "<div class='right smallsmall italic pad5'>Marquee is maintened by the <a class='tooltip' rel='external' href='http://xoops.org/' title='Visitez XOOPS Community'>XOOPS Community</a></div>");
+
+define('_MARQUEE_ADMIN_'," "); //
 ?>
