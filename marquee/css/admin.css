@@ -74,18 +74,18 @@ div.rmmenuicon a {
 }
 
 div.rmmenuicon a:hover {
-	transform: scale(1.1) rotate(-5deg);
+	/*transform: scale(1.1) rotate(-5deg);
 		-webkit-transform: scale(1.1) rotate(-5deg);
 		-moz-transform: scale(1.1) rotate(-5deg);
-		-o-transform: scale(1.1) rotate(-5deg);
+		-o-transform: scale(1.1) rotate(-5deg);*/
 	/*box-shadow: 0 0 20px #787878;
 		-webkit-box-shadow:0 0 20px #787878;
 		-moz-box-shadow:0 0 20px #787878;
 		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
 		zoom: 1;*/
-	box-shadow:
+	/*box-shadow:
 		0 2px 2px 0 rgba(0, 0, 0, 0.5),
-		0 2px 2px 0 rgba(255, 255, 255, 0.5) inset;
+		0 2px 2px 0 rgba(255, 255, 255, 0.5) inset;*/
 }
 div.rmmenuicon img {  margin-top:            8px;  margin-bottom:         8px;}
 div.rmmenuicon img:hover { 

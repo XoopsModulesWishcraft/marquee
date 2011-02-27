@@ -26,7 +26,7 @@ if (!defined('XOOPS_ROOT_PATH')) {
 
 $module_dirname = basename( dirname( __FILE__ ) ) ;
 
-$modversion['name'] = 'Marquee';
+$modversion['name'] = _MI_MARQUEE_NAME;
 $modversion['version'] = '2.48';
 $modversion['description'] = _MI_MARQUEE_DESC;
 $modversion['credits'] = "Carnuke, defkon1, the Newbb team";
