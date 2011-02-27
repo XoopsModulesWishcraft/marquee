@@ -26,10 +26,15 @@ $adminmenu[0]['link'] = 'admin/index.php';*/
 $adminmenu = array();
 
 $i = 1;
-$adminmenu[$i]["title"] = _MI_MARQUEE_MENU_01;
+$adminmenu[$i]["title"] = _MI_MARQUEE_MENU_00;
 $adminmenu[$i]["link"]  = "admin/index.php";
 $adminmenu[$i]["desc"] = _MARQUEE_ADMIN_HOME_DESC;
-$adminmenu[$i]["icon"] = "images/icons/index.png";
+$adminmenu[$i]["icon"] = "images/icons/home.png";
+$i++;
+$adminmenu[$i]["title"] = _MI_MARQUEE_MENU_01;
+$adminmenu[$i]["link"]  = "admin/marquee.php";
+$adminmenu[$i]["desc"] = _MARQUEE_ADMIN_MARQUEE_DESC;
+$adminmenu[$i]["icon"] = "images/icons/marquee.png";
 $i++;
 $adminmenu[$i]["title"] = _MARQUEE_ADMIN_ABOUT;
 $adminmenu[$i]["link"]  = "admin/about.php";

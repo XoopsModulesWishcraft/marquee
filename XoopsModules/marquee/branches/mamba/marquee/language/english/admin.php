@@ -87,8 +87,5 @@ define("_AM_MARQUEE_ADMIN_UPDATE",                 "Update");
 define("_AM_MARQUEE_ADMIN_PREFERENCES",                 "Settings");
 define("_AM_MARQUEE_ADMIN_INDEX_TXT1",                 "This module lets you display on your pages with <strong>\"slideshow \"</strong> images with links to pages on your site or pages externes.<br />By default, the module is delivered with 7 flash slideshow templates, javascript or css, you can naturally incorporate or create new ones <em>(make based on those existing for example)</em> with some knowledge of development");
 
-// text in admin footer
-define("_AM_MARQUEE_ADMIN_FOOTER",                 "<div class='right smallsmall italic pad5'>Marquee is maintened by the <a class='tooltip' rel='external' href='http://xoops.org/' title='Visitez XOOPS Community'>XOOPS Community</a></div>");
-
 define('_MARQUEE_ADMIN_'," "); //
 ?>

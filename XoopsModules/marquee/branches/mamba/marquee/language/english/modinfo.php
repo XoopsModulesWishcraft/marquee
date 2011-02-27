@@ -19,6 +19,7 @@
  * Version : $Id:
  * ****************************************************************************
  */
+define("_MI_MARQUEE_NAME",		"Marquee");
 define("_MI_MARQUEE_DESC",		"Enable you to create scrolling texts (marquees)");
 define("_MI_MARQUEE_BNAME_01",	"Marquee 01");
 define("_MI_MARQUEE_BDESC_01",	"Display marquee 01");
@@ -53,14 +54,19 @@ define("_MI_MARQUEE_FORM_TINYEDITOR","TinyEditor");
 
 //2.48
 // index.php
-//define("_AM_MARQUEE_ADMIN_INDEX",                  "Index");
+define("_MI_MARQUEE_ADMIN_INDEX",                  "Index");
 define("_MI_MARQUEE_ADMIN_ABOUT",                  "About");
 define("_MI_MARQUEE_ADMIN_HELP",                 "Help");
 
-define('_MARQUEE_ADMIN_HOME',"Home"); 
-define("_MARQUEE_ADMIN_HOME_DESC","Go back to Administration module");
+define('_MI_MARQUEE_MENU_00',"Home"); 
+define("_MARQUEE_ADMIN_HOME_DESC","Go back to Home");
+
+define('_MARQUEE_ADMIN_HOME',"Marquees"); 
+define("_MARQUEE_ADMIN_MARQUEE_DESC","Manage Marquees");
+
 define("_MARQUEE_ADMIN_ABOUT" , "About");
 define("_MARQUEE_ADMIN_ABOUT_DESC" , "About this module");
+
 define("_MARQUEE_ADMIN_HELP" , "Help");
 define("_MARQUEE_ADMIN_HELP_DESC" , "Module help");
 
