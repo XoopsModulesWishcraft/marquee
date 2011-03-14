@@ -147,7 +147,6 @@ function AddEditMarqueeForm($marqueeid, $Action, $FormTitle, $contentvalue, $bgc
 	$button_tray->addElement($cancel_btn);
 	$sform->addElement($button_tray);
 	$sform->display();
-	echo "<br /><br /><table border='0' width='100%' align='center'><tr><td align='center'><a href='http://xoops.instant-zero.com' target='_blank'><img src='../images/xoopsmicrobutton.gif'></a></td></tr></table>";
 }
 
 // ******************************************************************************************************************************************

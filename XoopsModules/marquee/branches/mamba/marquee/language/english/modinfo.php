@@ -20,7 +20,7 @@
  * ****************************************************************************
  */
 define("_MI_MARQUEE_NAME",		"Marquee");
-define("_MI_MARQUEE_DESC",		"Enable you to create scrolling texts (marquees)");
+define("_MI_MARQUEE_DESC",		"Enables you to create scrolling texts (marquees)");
 define("_MI_MARQUEE_BNAME_01",	"Marquee 01");
 define("_MI_MARQUEE_BDESC_01",	"Display marquee 01");
 define("_MI_MARQUEE_BNAME_02",	"Marquee 02");
@@ -33,7 +33,7 @@ define("_MI_MARQUEE_MENU_01",	"Manage marquees");
 define("_MI_MARQUEE_USE_KIOVI", "Use kiovi ?");
 define("_MI_MARQUEE_USE_KIOVI_DESC","If it is detected then Kiovi will be used");
 define("_MI_MARQUEE_METHOD","Method to use");
-define("_MI_MARQUEE_METHOD_DESC","If you select the 'Marquee' method then the module will use the html marquee's tag, this method is not compatible with all navigators but offers many options.<br>If you select the 'dhtml' method, then the marquee should run with more navigators but it will require more code in your page and you will have less options");
+define("_MI_MARQUEE_METHOD_DESC","If you select the 'Marquee' method then the module will use the html marquee's tag, this method is not compatible with all navigators but offers many options.<br>If you select the 'JavaScript' method, then the marquee should run with more navigators but it will require more code in your page and you will have less options");
 define("_MI_MARQUEE_MARQUEE","Marquee");
 define("_MI_MARQUEE_DHTML","Javascript");
 define("_MI_MARQUEE_DATEFORMAT","Date's format");
@@ -54,9 +54,9 @@ define("_MI_MARQUEE_FORM_TINYEDITOR","TinyEditor");
 
 //2.48
 // index.php
-define("_MI_MARQUEE_ADMIN_INDEX",                  "Index");
-define("_MI_MARQUEE_ADMIN_ABOUT",                  "About");
-define("_MI_MARQUEE_ADMIN_HELP",                 "Help");
+define("_MI_MARQUEE_ADMIN_INDEX", "Index");
+define("_MI_MARQUEE_ADMIN_ABOUT", "About");
+define("_MI_MARQUEE_ADMIN_HELP", "Help");
 
 define('_MI_MARQUEE_MENU_00',"Home"); 
 define("_MARQUEE_ADMIN_HOME_DESC","Go back to Home");
