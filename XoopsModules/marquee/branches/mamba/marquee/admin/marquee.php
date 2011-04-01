@@ -25,6 +25,9 @@ require_once XOOPS_ROOT_PATH.'/modules/marquee/admin/functions.php';
 require_once XOOPS_ROOT_PATH.'/modules/marquee/include/functions.php';
 require_once XOOPS_ROOT_PATH.'/modules/marquee/class/marquee_utils.php';
 
+include_once XOOPS_ROOT_PATH."/modules/" . $xoopsModule->getVar("dirname") . "/class/admin.php";
+        $marquee_admin = new ModuleAdmin();
+
 $op = 'default';
 if (isset($_POST['op'])) {
  $op = $_POST['op'];
@@ -32,12 +35,8 @@ if (isset($_POST['op'])) {
    	$op = $_GET['op'];
 }
 
-/**
- * Verify that a field exists inside a mysql table
- *
- * @package Marquee
- * @author Instant Zero (http://xoops.instant-zero.com)
- */
+// Verify that a field exists inside a mysql table
+
 function marquee_FieldExists($fieldname,$table)
 {
 	global $xoopsDB;
@@ -189,7 +188,8 @@ switch ($op)
 	// Edit an element
     case 'edit':
         xoops_cp_header();
-        marquee_adminmenu(0);
+        echo $marquee_admin->addNavigation('marquee.php');	
+		
         echo '<br />';
         if(isset($_GET['marqueeid'])) {
     	    $marqueeid = intval($_GET['marqueeid']);
@@ -203,6 +203,8 @@ switch ($op)
     case 'delete':
         if (!isset($_POST['ok'])) {
             xoops_cp_header();
+        echo $marquee_admin->addNavigation('marquee.php');	
+		
             echo '<h4>' . _AM_MARQUEE_CONFIG . '</h4>';
             xoops_confirm( array( 'op' => 'delete', 'marqueeid' => $_GET['marqueeid'], 'ok' => 1 ), 'index.php', _AM_MARQUEE_RUSUREDEL );
         } else {
@@ -248,7 +250,8 @@ switch ($op)
 	// Display the form to add an element
     case 'addmarquee':
     	xoops_cp_header();
-    	marquee_adminmenu(0);
+        echo $marquee_admin->addNavigation('marquee.php');	
+		
     	echo '<br />';
     	AddEditMarqueeForm(0, 'verifytoadd', _AM_MARQUEE_CONFIG, '', '','','','',0, 0,'',0,0,0,0,0, _AM_MARQUEE_ADDBUTTON,'fixed');
         break;
@@ -256,7 +259,8 @@ switch ($op)
 	// Default action, list all elements
     case 'default':
         xoops_cp_header();
-        marquee_adminmenu(0);
+        echo $marquee_admin->addNavigation('marquee.php');		
+
         echo '<h4>' . _AM_MARQUEE_CONFIG . "</h4><br />\n";
         echo"<table width='100%' border='0' cellspacing='1' class='outer'>\n";
         echo "<tr><th align='center'>". _AM_MARQUEE_ID . "</th><th align='center'>" . _AM_MARQUEE_CONTENT . "</th><th align='center'>" . _AM_MARQUEE_BEHAVIOUR . "</th><th align='center'>". _AM_MARQUEE_SOURCE . "</th><th align='center'>" .  _AM_MARQUEE_STOP . "</th><th align='center'>" . _AM_MARQUEE_DIRECTION . "</th><th align='center'>" . _AM_MARQUEE_ACTION . "</th></tr>\n";
@@ -287,11 +291,13 @@ switch ($op)
 				$class = ($class == 'even') ? 'odd' : 'even';
         	}
         }
+
 		echo "<tr class='".$class."'><td colspan='7' align='center'><form name='faddmarquee' method='post' action='marquee.php'><input type='hidden' name='op' value='addmarquee' /><input type='submit' name='submit' value='"._AM_MARQUEE_ADDMARQUEE."' /></td></tr>";
         echo '</table>';
-        //echo "<br /><br /><table border='0' width='100%' align='center'><tr><td align='center'><a href='http://xoops.org' target='_blank'><img src='../images/xoopsmicrobutton.gif'></a></td></tr></table>";
         break;
 }
+
+echo $marquee_admin->renderabout();
 include "footer.php";
 xoops_cp_footer();
 ?>
