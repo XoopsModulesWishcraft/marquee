@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,13 +11,16 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * Version : $Id:
  * ****************************************************************************
  */
-define("_MB_MARQUEE_SELECT","Choisissez le marquee à utiliser");
+
+define("_EXT_MARQUEE_ALTWMP","Ajouter une marquee depuis le module Marquee");
+define("_EXT_MARQUEE_TEXTID","Identifiant de la marquee Ã  afficher");
+define("_EXT_MARQUEE_TEXTTITLE","Entrez le titre de la marquee");
 ?>

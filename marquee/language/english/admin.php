@@ -19,7 +19,7 @@
  * Version : $Id:
  * ****************************************************************************
  */
-define("_AM_MARQUEE_CONFIG","Marquees Management");
+define("_AM_MARQUEE_CONFIG","Marquees Configuration");
 define("_AM_MARQUEE_ID","ID");
 define("_AM_MARQUEE_GENERALSET", "Preferences" );
 define("_AM_MARQUEE_MODULEADMIN","Module's administration");
@@ -65,7 +65,8 @@ define("_AM_MARQUEE_SOURCE_FIXED","A fixed text");
 //2.4.8
 
 // About.php
-define("_AM_MARQUEE_ABOUT_RELEASEDATE",        "Update date: ");
+define("_AM_MARQUEE_ABOUT_RELEASEDATE",              "Released: ");
+define("_AM_MARQUEE_ABOUT_UPDATEDATE",               "Updated: ");
 define("_AM_MARQUEE_ABOUT_AUTHOR",                   "Author: ");
 define("_AM_MARQUEE_ABOUT_CREDITS",                  "Credits: ");
 define("_AM_MARQUEE_ABOUT_LICENSE",                  "License: ");
@@ -73,19 +74,14 @@ define("_AM_MARQUEE_ABOUT_MODULE_STATUS",            "Status: ");
 define("_AM_MARQUEE_ABOUT_WEBSITE",                  "Website: ");
 define("_AM_MARQUEE_ABOUT_AUTHOR_NAME",              "Author name: ");
 define("_AM_MARQUEE_ABOUT_CHANGELOG",                "Change Log");
-define("_AM_MARQUEE_ABOUT_MODULE_INFO",              "Module Infos");
-define("_AM_MARQUEE_ABOUT_AUTHOR_INFO",              "Author Infos");
-define("_AM_MARQUEE_ABOUT_DESCRIPTION",          "Description: ");
+define("_AM_MARQUEE_ABOUT_MODULE_INFO",              "Module Info");
+define("_AM_MARQUEE_ABOUT_AUTHOR_INFO",              "Author Info");
+define("_AM_MARQUEE_ABOUT_DESCRIPTION",              "Description: ");
 
 // index.php
 define("_AM_MARQUEE_ADMIN_INDEX",                  "Index");
 define("_AM_MARQUEE_ADMIN_ABOUT",                  "About");
-define("_AM_MARQUEE_ADMIN_HELP",                 "Help");
-define("_AM_MARQUEE_ADMIN_SLIDES",                 "Slides");
-define("_AM_MARQUEE_ADMIN_PAGES",            "Pages");
-define("_AM_MARQUEE_ADMIN_UPDATE",                 "Update");
-define("_AM_MARQUEE_ADMIN_PREFERENCES",                 "Settings");
-define("_AM_MARQUEE_ADMIN_INDEX_TXT1",                 "This module lets you display on your pages with <strong>\"slideshow \"</strong> images with links to pages on your site or pages externes.<br />By default, the module is delivered with 7 flash slideshow templates, javascript or css, you can naturally incorporate or create new ones <em>(make based on those existing for example)</em> with some knowledge of development");
+define("_AM_MARQUEE_ADMIN_HELP",                   "Help");
 
 define('_MARQUEE_ADMIN_'," "); //
 ?>

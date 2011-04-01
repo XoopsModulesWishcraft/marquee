@@ -1,6 +1,10 @@
+v2.49 2011/03/31:
+=================================
+- added new Admin Menu Class (Mage, mamba)
+
 v2.48 2011/02/23:
 =================================
-- changed GUI (mamba)
+- updated GUI to XOOPS Standard  (mamba)
 
 v2.47
 =================================
