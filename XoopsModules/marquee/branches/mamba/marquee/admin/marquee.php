@@ -26,7 +26,7 @@ require_once XOOPS_ROOT_PATH.'/modules/marquee/include/functions.php';
 require_once XOOPS_ROOT_PATH.'/modules/marquee/class/marquee_utils.php';
 
 include_once XOOPS_ROOT_PATH."/modules/" . $xoopsModule->getVar("dirname") . "/class/admin.php";
-        $marquee_admin = new ModuleAdmin();
+$marquee_admin = new ModuleAdmin();
 
 $op = 'default';
 if (isset($_POST['op'])) {
@@ -174,12 +174,12 @@ switch ($op)
 				$marquee->setVar('marquee_content', $_POST['content']);
 				$marquee->setVar('marquee_source', $_POST['source']);
 				if(!$marquee_handler->insert($marquee)) {
-					redirect_header('index.php', 1,_AM_MARQUEE_ERROR_MODIFY_DB);
+					redirect_header('marquee.php', 1,_AM_MARQUEE_ERROR_MODIFY_DB);
 					exit();
 				}
-				redirect_header('index.php', 1, _AM_MARQUEE_DBUPDATED);
+				redirect_header('marquee.php', 1, _AM_MARQUEE_DBUPDATED);
 			} else {
-				redirect_header('index.php', 3, _ERRORS);
+				redirect_header('marquee.php', 3, _ERRORS);
 			}
 		}
         break;
@@ -203,18 +203,17 @@ switch ($op)
     case 'delete':
         if (!isset($_POST['ok'])) {
             xoops_cp_header();
-        echo $marquee_admin->addNavigation('marquee.php');	
-		
-            echo '<h4>' . _AM_MARQUEE_CONFIG . '</h4>';
-            xoops_confirm( array( 'op' => 'delete', 'marqueeid' => $_GET['marqueeid'], 'ok' => 1 ), 'index.php', _AM_MARQUEE_RUSUREDEL );
+			echo $marquee_admin->addNavigation('marquee.php');		
+            // echo '<h4>' . _AM_MARQUEE_CONFIG . '</h4>';
+            xoops_confirm( array( 'op' => 'delete', 'marqueeid' => $_GET['marqueeid'], 'ok' => 1 ), 'marquee.php', _AM_MARQUEE_RUSUREDEL );			
         } else {
             if ( empty($_POST['marqueeid'])) {
-                redirect_header( 'index.php', 2, _AM_MARQUEE_ERROR_ADD_MARQUEE);
+                redirect_header( 'marquee.php', 2, _AM_MARQUEE_ERROR_ADD_MARQUEE);
                 exit();
-            }
-            $marqueeid = intval($_POST['marqueeid']);
+            }            
+            $marqueeid = intval($_POST['marqueeid']);			          
             $marquee = $marquee_handler->deleteAll(new Criteria('marquee_marqueeid', $marqueeid ,'='));
-            redirect_header( 'index.php', 1, _AM_MARQUEE_DBUPDATED );
+            redirect_header( 'marquee.php', 1, _AM_MARQUEE_DBUPDATED );
             exit();
         }
         break;
@@ -239,10 +238,10 @@ switch ($op)
 				'marquee_content' => $_POST['content'],
 				'marquee_source' => $_POST['source']));
 			if(!$vres) {
-				redirect_header('index.php', 1,_AM_MARQUEE_ERROR_ADD_MARQUEE);
+				redirect_header('marquee.php', 1,_AM_MARQUEE_ERROR_ADD_MARQUEE);
 				exit();
 			}
-			redirect_header('index.php', 1, _AM_MARQUEE_ADDED_OK);
+			redirect_header('marquee.php', 1, _AM_MARQUEE_ADDED_OK);
 		}
         break;
 
@@ -261,7 +260,7 @@ switch ($op)
         xoops_cp_header();
         echo $marquee_admin->addNavigation('marquee.php');		
 
-        echo '<h4>' . _AM_MARQUEE_CONFIG . "</h4><br />\n";
+//        echo '<h4>' . _AM_MARQUEE_CONFIG . "</h4><br />\n";
         echo"<table width='100%' border='0' cellspacing='1' class='outer'>\n";
         echo "<tr><th align='center'>". _AM_MARQUEE_ID . "</th><th align='center'>" . _AM_MARQUEE_CONTENT . "</th><th align='center'>" . _AM_MARQUEE_BEHAVIOUR . "</th><th align='center'>". _AM_MARQUEE_SOURCE . "</th><th align='center'>" .  _AM_MARQUEE_STOP . "</th><th align='center'>" . _AM_MARQUEE_DIRECTION . "</th><th align='center'>" . _AM_MARQUEE_ACTION . "</th></tr>\n";
 		$marqueearray= $marquee_handler->getObjects();
