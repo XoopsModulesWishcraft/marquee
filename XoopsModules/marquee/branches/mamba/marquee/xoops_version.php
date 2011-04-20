@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,10 +11,10 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * Version : $Id:
  * ****************************************************************************
@@ -31,7 +31,7 @@ $modversion['version'] = '2.49';
 $modversion['description'] = _MI_MARQUEE_DESC;
 $modversion['credits'] = "Carnuke, defkon1, the Newbb team, Mage, Mamba";
 $modversion['author'] = 'Hervé Thouzard';
-$modversion['pseudo'] = 'hervet';
+$modversion['nickname'] = 'hervet';
 $modversion['help'] = 'page=help';
 $modversion['license'] = 'GNU GPL 2.0';
 $modversion['license_url'] = "www.gnu.org/licenses/gpl-2.0.html/";
@@ -39,20 +39,18 @@ $modversion['official'] = 0;
 $modversion['image'] = 'images/marquee_slogo.png';
 $modversion['dirname'] = 'marquee';
 
-//Mage
-$modversion['status_version']   = 'RC';
-$modversion['release_date']     = '2011/03/22';
-$modversion['sqlfile']['mysql'] = 'sql/mysql.sql';
-
 //about
+$modversion['release_date']     = '2011/04/20';
 $modversion["module_website_url"] = "http://www.xoops.org/";
 $modversion["module_website_name"] = "XOOPS";
-$modversion["release"] = "23-07-2009";
 $modversion["module_status"] = "RC";
 $modversion["author_website_url"] = "http://www.herve-thouzard.com/";
 $modversion["author_website_name"] = "Hervé Thouzard";
+$modversion['min_php']='5.2';
+$modversion['min_xoops']="2.5";
 
 // SQL Tables
+$modversion['sqlfile']['mysql'] = 'sql/mysql.sql';
 $modversion['tables'][0] = 'marquee';
 
 // Admin menu
@@ -113,7 +111,8 @@ $modversion['config'][1]['formtype'] = 'select';
 $modversion['config'][1]['valuetype'] = 'text';
 $modversion['config'][1]['default'] = 'dhtmltextarea';
 xoops_load('xoopseditorhandler');
-$modversion['config'][1]['options'] = array_flip(xoopsEditorHandler::getList());
+$editor_handler = XoopsEditorHandler::getInstance();
+$modversion['config'][1]['options'] = array_flip($editor_handler->getList());
 
 /**
  * Which method to use to create the marquee (The Microsoft marque tag or the Javascript method ?)

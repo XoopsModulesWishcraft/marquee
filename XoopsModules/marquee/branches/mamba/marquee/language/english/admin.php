@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,10 +11,10 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * Version : $Id:
  * ****************************************************************************
@@ -78,10 +78,9 @@ define("_AM_MARQUEE_ABOUT_MODULE_INFO",              "Module Info");
 define("_AM_MARQUEE_ABOUT_AUTHOR_INFO",              "Author Info");
 define("_AM_MARQUEE_ABOUT_DESCRIPTION",              "Description: ");
 
-// index.php
-define("_AM_MARQUEE_ADMIN_INDEX",                  "Index");
-define("_AM_MARQUEE_ADMIN_ABOUT",                  "About");
-define("_AM_MARQUEE_ADMIN_HELP",                   "Help");
+// Configuration
+define("_AM_MARQUEE_CONFIG_CHECK","Configuration Check");
+define("_AM_MARQUEE_CONFIG_PHP","Minimum PHP required: %s (your version is %s)");
+define("_AM_MARQUEE_CONFIG_XOOPS","Minimum XOOPS required:  %s (your version is %s)");
 
-define('_MARQUEE_ADMIN_'," "); //
 ?>
