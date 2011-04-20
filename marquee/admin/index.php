@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,10 +11,10 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * Version : $Id:
  * ****************************************************************************
@@ -29,9 +29,11 @@ include_once XOOPS_ROOT_PATH."/modules/" . $xoopsModule->getVar("dirname") . "/c
 	$index_admin = new ModuleAdmin();
 
     echo $index_admin->addNavigation('index.php');
+    $index_admin->addConfigLabel(_AM_MARQUEE_CONFIG_CHECK);
+    $index_admin->addLineConfigLabel(_AM_MARQUEE_CONFIG_PHP, $xoopsModule->getInfo("min_php"), 'php') ;
+    $index_admin->addLineConfigLabel(_AM_MARQUEE_CONFIG_XOOPS, $xoopsModule->getInfo("min_xoops"), 'xoops');
+	
     echo $index_admin->renderIndex();
-    echo $index_admin->renderAbout();     
 
 include "footer.php";
-xoops_cp_footer();
 ?>

@@ -49,7 +49,7 @@ class ModuleAdmin
 
     function renderButton($position = "right", $delimeter = "&nbsp;")
     {
-        $path = XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/images/admin/";
+        $path = XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/images/icons/";
         switch ($position)
         {
             default:
@@ -101,11 +101,14 @@ class ModuleAdmin
                 $line .= "<img src='" . XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/" . $this->_obj->getInfo('image') . "' alt='" . $this->_obj->getVar('name') . "' style='float: left; margin-right: 10px;' />\n";
                 $line .= "</td><td>\n";
                 $line .= "<div style='margin-top: 1px; margin-bottom: 4px; font-size: 18px; line-height: 18px; color: #2F5376; font-weight: bold;'>\n";
-                $line .= $this->_obj->getInfo('name') . " " . $this->_obj->getInfo('version') . " " . $this->_obj->getInfo('status_version') ;
+                $line .= $this->_obj->getInfo('name') . " " . $this->_obj->getInfo('version') . " " . $this->_obj->getInfo('module_status') ;
                 $line .= "<br />\n";
                 $line .= "</div>\n";
                 $line .= "<div style='line-height: 16px; font-weight: bold;'>\n";
-                $line .= "by " . $this->_obj->getInfo('author') . " (" . $this->_obj->getInfo('pseudo') . ")\n";
+                $line .= "by " . $this->_obj->getInfo('author') ;
+                if ($this->_obj->getInfo('nickname') != ''){
+                    $line .=  " (" . $this->_obj->getInfo('nickname') . ")\n";
+                }
                 $line .= "</div>\n";
                 $line .= "<div style='line-height: 16px;'>\n";
 
@@ -123,8 +126,8 @@ class ModuleAdmin
                     $line .= '<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                               <input type="hidden" name="cmd" value="_s-xclick">
                               <input type="hidden" name="hosted_button_id" value="' . $value . '">
-                              <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                              <img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                              <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" style="border-width: 0px;" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                              <img alt="" style="border-width: 0px; height: 1px; width: 1px;" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" />
                               </form>';
                 }
                 $line .= "</div>\n";
@@ -146,7 +149,7 @@ class ModuleAdmin
         foreach (array_keys( $this -> _itemLabel) as $i) {
             $ret .= "<fieldset><legend class=\"label\">";
             $ret .= $this -> _itemLabel[$i]['title'];
-            $ret .= "</legend><br/>\n";
+            $ret .= "</legend>\n";
             foreach (array_keys( $this -> _itemLineLabel) as $k) {
                 if ($this -> _itemLineLabel[$k]['label'] == $this -> _itemLabel[$i]['title']){
                     $ret .= $this -> _itemLineLabel[$k]['line'];
@@ -158,17 +161,17 @@ class ModuleAdmin
         }
         return $ret;
     }
-    
+
     function addConfigLabel($title)
     {
         $this -> _itemConfigLabel = $title;
         return true;
     }
-    
+
     function addLineConfigLabel($text, $value = '', $type = 'default')
     {
         $line = "";
-        $path = XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/images/admin/";
+        $path = XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/images/icons/";
         switch ($type)
         {
             default:
@@ -178,34 +181,33 @@ class ModuleAdmin
 
             case "php":
                 if (phpversion() < $value){
-                    $line .= "<span style='color : red; font-weight : bold;'><img src='" . $path . "off.gif' >" . sprintf($text, $value, phpversion()) . "</span>\n";
+                    $line .= "<span style='color : red; font-weight : bold;'><img src='" . $path . "off.png' >" . sprintf($text, $value, phpversion()) . "</span>\n";
                 }else{
-                    $line .= "<span style='color : green;'><img src='" . $path . "on.gif' >" . sprintf($text, $value, phpversion()) . "</span>\n";
+                    $line .= "<span style='color : green;'><img src='" . $path . "on.png' >" . sprintf($text, $value, phpversion()) . "</span>\n";
                 }
                 break;
 
             case "xoops":
-                if (substr(XOOPS_VERSION, 0, 9) < $value){
-                    $line .= "<span style='color : red; font-weight : bold;'><img src='" . $path . "off.gif' >" . sprintf($text, $value, substr(XOOPS_VERSION, 0, 9)) . "</span>\n";
+               if (substr(XOOPS_VERSION, 6, strlen(XOOPS_VERSION)-6) < $value){
+                    $line .= "<span style='color : red; font-weight : bold;'><img src='" . $path . "off.png' >" . sprintf($text, $value, substr(XOOPS_VERSION, 6, strlen(XOOPS_VERSION)-6)) . "</span>\n";
                 }else{
-                    $line .= "<span style='color : green;'><img src='" . $path . "on.gif' >" . sprintf($text, $value, substr(XOOPS_VERSION, 0, 9)) . "</span>\n";
-                }
+                    $line .= "<span style='color : green;'><img src='" . $path . "on.png' >" . sprintf($text, $value, substr(XOOPS_VERSION, 6, strlen(XOOPS_VERSION)-6)) . "</span>\n";                }
                 break;
 
             case "folder":
                 if (!is_dir($value)){
-                    $line .= "<span style='color : red; font-weight : bold;'><img src='" . $path . "off.gif' >" . sprintf($text[1], $value) . "</span>\n";
+                    $line .= "<span style='color : red; font-weight : bold;'><img src='" . $path . "off.png' >" . sprintf($text[1], $value) . "</span>\n";
                 }else{
-                    $line .= "<span style='color : green;'><img src='" . $path . "on.gif' >" . sprintf($text[0], $value) . "</span>\n";
+                    $line .= "<span style='color : green;'><img src='" . $path . "on.png' >" . sprintf($text[0], $value) . "</span>\n";
                 }
                 break;
 
             case "chmod":
                 if (is_dir($value[0])){
                     if (substr(decoct(fileperms($value[0])),2) != $value[1]) {
-                        $line .= "<span style='color : red; font-weight : bold;'><img src='" . $path . "off.gif' >" . sprintf($text, $value[0], $value[1], substr(decoct(fileperms($value[0])),2)) . "</span>\n";
+                        $line .= "<span style='color : red; font-weight : bold;'><img src='" . $path . "off.png' >" . sprintf($text, $value[0], $value[1], substr(decoct(fileperms($value[0])),2)) . "</span>\n";
                     }else{
-                        $line .= "<span style='color : green;'><img src='" . $path . "on.gif' >" . sprintf($text, $value[0], $value[1], substr(decoct(fileperms($value[0])),2)) . "</span>\n";
+                        $line .= "<span style='color : green;'><img src='" . $path . "on.png' >" . sprintf($text, $value[0], $value[1], substr(decoct(fileperms($value[0])),2)) . "</span>\n";
                     }
                 }
                 break;
@@ -213,7 +215,7 @@ class ModuleAdmin
         $this -> _itemLineConfigLabel[] = $line;
         return true;
     }
-    
+
     function addChangelogLabel($title)
     {
         $line = "<fieldset><legend class=\"label\">\n";
@@ -221,11 +223,11 @@ class ModuleAdmin
         $line .= "</legend><br/>\n";
         $line .= "<div class=\"txtchangelog\">\n";
         $language = $GLOBALS['xoopsConfig']['language'];
-        if ( !is_file( XOOPS_ROOT_PATH . "/modules/" . $this->_obj->getVar("dirname") . "/language/" . $language . "/changelog.txt" ) ){
+        if ( !is_file( XOOPS_ROOT_PATH . "/modules/" . $this->_obj->getVar("dirname") . "/docs/changelog.txt" ) ){
             $language = 'english';
         }
         $language = empty($language) ? $GLOBALS['xoopsConfig']['language'] : $language;
-        $file = XOOPS_ROOT_PATH. "/modules/" . $this->_obj->getVar("dirname") . "/language/" . $language . "/changelog.txt";
+        $file = XOOPS_ROOT_PATH. "/modules/" . $this->_obj->getVar("dirname") . "/docs/changelog.txt";
         if ( is_readable( $file ) ){
             $line .= utf8_encode(implode("<br />", file( $file ))) . "\n";
         }
@@ -234,7 +236,7 @@ class ModuleAdmin
         $this -> _itemChangelogLabel = $line;
         return true;
     }
-    
+
     function addNavigation($menu = '')
     {
         $ret = "";
@@ -248,7 +250,7 @@ class ModuleAdmin
         }
         return $ret;
     }
-    
+
     function renderMenuIndex()
     {
         $path = XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/";
@@ -258,10 +260,10 @@ class ModuleAdmin
         foreach (array_keys( $this->_obj->adminmenu) as $i) {
             if ($this->_obj->adminmenu[$i]['link'] != 'admin/index.php'){
                 if (isset($this->_obj->adminmenu[$i]['menu'])){
-                    $ret .= "<a href=\"../" . $this->_obj->adminmenu[$i]['link'] . "\" title=\"" . $this->_obj->adminmenu[$i]['title'] . "\">" . 
+                    $ret .= "<a href=\"../" . $this->_obj->adminmenu[$i]['link'] . "\" title=\"" . $this->_obj->adminmenu[$i]['title'] . "\">" .
                             "<img src=\"" . $path . $this->_obj->adminmenu[$i]['menu'] . "\" alt=\"" . $this->_obj->adminmenu[$i]['title'] . "\" />";
                 }else{
-                    $ret .= "<a href=\"../" . $this->_obj->adminmenu[$i]['link'] . "\" title=\"" . $this->_obj->adminmenu[$i]['title'] . "\">" . 
+                    $ret .= "<a href=\"../" . $this->_obj->adminmenu[$i]['link'] . "\" title=\"" . $this->_obj->adminmenu[$i]['title'] . "\">" .
                             "<img src=\"" . $path . $this->_obj->adminmenu[$i]['icon'] . "\" alt=\"" . $this->_obj->adminmenu[$i]['title'] . "\" />";
                 }
                 $ret .= "<span>" . $this->_obj->adminmenu[$i]['title'] . "</span>";
@@ -270,16 +272,17 @@ class ModuleAdmin
         }
         if ($this->_obj->getInfo('help')) {
             $ret .= "<a href=\"" . $pathsystem . "help.php?mid=" . $this->_obj->getVar('mid', 's') . "&amp;" . $this->_obj->getInfo('help') . "\" title=\"" . _AM_SYSTEM_HELP . "\">" .
-                    "<img width=\"48px\" src=\"" . $path . "images/admin/help.png\" alt=\"" . _AM_SYSTEM_HELP . "\" /> ";
+                    "<img width=\"32px\" src=\"" . $path . "images/admin/help.png\" alt=\"" . _AM_SYSTEM_HELP . "\" /> ";
             $ret .= "<span>" . _AM_SYSTEM_HELP . "</span>";
             $ret .= "</a>";
         }
         $ret .= "</div>\n<div style=\"clear: both;\"></div>\n";
         return $ret;
     }
-    
+
     function renderIndex()
     {
+        $path = XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/images/icons/";
         $ret = "<table>\n<tr>\n";
         $ret .= "<td width=\"40%\">\n";
         $ret .= $this -> renderMenuIndex();
@@ -287,7 +290,7 @@ class ModuleAdmin
         $ret .= "<td width=\"60%\">\n";
         $ret .= $this -> renderLabel();
         $ret .= "</td>\n";
-        $ret .= "</tr>\n";        
+        $ret .= "</tr>\n";
         // If you use a config label
         if ($this -> _itemConfigLabel != ''){
             $ret .= "<tr>\n";
@@ -304,12 +307,17 @@ class ModuleAdmin
             $ret .= "</tr>\n";
         }
         $ret .= "</table>\n";
+
+//        $ret .= "<div align=\"center\">";
+//        $ret .= "<a href=\"http://www.xoops.org\" target=\"_blank\"><img src=\"" . $path . "xoopsmicrobutton.gif\" alt=\"XOOPS\" title=\"XOOPS\"></a>";
+//        $ret .= "</div>";
+
         return $ret;
     }
-    
+
     function renderAbout($type = 'default')
     {
-        $path = XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/images/admin/";
+        $path = XOOPS_URL . "/modules/" . $this->_obj->getVar('dirname') . "/images/icons/";
         $ret = "<table>\n<tr>\n";
         $ret .= "<td width=\"50%\">\n";
         $ret .= $this -> renderLabel();
@@ -323,9 +331,6 @@ class ModuleAdmin
         $ret .= "</td>\n";
         $ret .= "</tr>\n";
         $ret .= "</table>\n";
-        $ret .= "<div align=\"center\">";
-        $ret .= "<a href=\"http://www.xoops.org\" target=\"_blank\"><img src=\"" . $path . "xoopsmicrobutton.gif\" alt=\"XOOPS\" title=\"XOOPS\"></a>";
-        $ret .= "</div>";
         return $ret;
     }
 }

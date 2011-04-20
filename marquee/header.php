@@ -13,7 +13,7 @@
  * @license             http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package	Marquee
  * @since		2.5.0
- * @author 	Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 	Hervé Thouzard (http://www.herve-thouzard.com)
  * @version	$Id $
 **/
 
