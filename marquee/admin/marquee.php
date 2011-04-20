@@ -273,8 +273,8 @@ switch ($op)
 //				$action_edit="<a href='".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid')."'>"._AM_MARQUEE_EDIT."</a>";
 //				$action_delete="<a href='".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid')."'>"._AM_MARQUEE_DELETE."</a>";
 
-                $action_edit="<a href='".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid')."'><img src='../images/edit.png' title='"._AM_MARQUEE_EDIT."'></a>";
-                $action_delete="<a href='".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid')."'><img src='../images/delete.png' title='"._AM_MARQUEE_DELETE."'></a>";
+                $action_edit="<a href='".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid')."'><img src='../images/icons/edit.png' title='"._AM_MARQUEE_EDIT."'></a>";
+                $action_delete="<a href='".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid')."'><img src='../images/icons/delete.png' title='"._AM_MARQUEE_DELETE."'></a>";
 
 				$direction=$tbldirection[$marquee->getVar('marquee_direction')];
 				$behaviour=$tblbehaviour[$marquee->getVar('marquee_behaviour')];
