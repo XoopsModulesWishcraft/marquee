@@ -21,19 +21,13 @@
  */
 
 require_once '../../../include/cp_header.php';
-include 'header.php';
+include 'admin_header.php';
+xoops_cp_header();
 
+	$indexAdmin = new ModuleAdmin();
 
-include_once XOOPS_ROOT_PATH."/modules/" . $xoopsModule->getVar("dirname") . "/class/admin.php";
+    echo $indexAdmin->addNavigation('index.php');
+    echo $indexAdmin->renderIndex();
 
-	$index_admin = new ModuleAdmin();
-
-    echo $index_admin->addNavigation('index.php');
-    $index_admin->addConfigLabel(_AM_MARQUEE_CONFIG_CHECK);
-    $index_admin->addLineConfigLabel(_AM_MARQUEE_CONFIG_PHP, $xoopsModule->getInfo("min_php"), 'php') ;
-    $index_admin->addLineConfigLabel(_AM_MARQUEE_CONFIG_XOOPS, $xoopsModule->getInfo("min_xoops"), 'xoops');
-	
-    echo $index_admin->renderIndex();
-
-include "footer.php";
+include "admin_footer.php";
 ?>

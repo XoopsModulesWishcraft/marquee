@@ -24,9 +24,9 @@ require_once '../../../include/cp_header.php';
 require_once XOOPS_ROOT_PATH.'/modules/marquee/admin/functions.php';
 require_once XOOPS_ROOT_PATH.'/modules/marquee/include/functions.php';
 require_once XOOPS_ROOT_PATH.'/modules/marquee/class/marquee_utils.php';
+include_once 'admin_header.php';
 
-include_once XOOPS_ROOT_PATH."/modules/" . $xoopsModule->getVar("dirname") . "/class/admin.php";
-$marquee_admin = new ModuleAdmin();
+$marqueeAdmin = new ModuleAdmin();
 
 $op = 'default';
 if (isset($_POST['op'])) {
@@ -188,7 +188,7 @@ switch ($op)
 	// Edit an element
     case 'edit':
         xoops_cp_header();
-        echo $marquee_admin->addNavigation('marquee.php');	
+        echo $marqueeAdmin->addNavigation('marquee.php');	
 		
         echo '<br />';
         if(isset($_GET['marqueeid'])) {
@@ -203,7 +203,7 @@ switch ($op)
     case 'delete':
         if (!isset($_POST['ok'])) {
             xoops_cp_header();
-			echo $marquee_admin->addNavigation('marquee.php');		
+			echo $marqueeAdmin->addNavigation('marquee.php');		
             // echo '<h4>' . _AM_MARQUEE_CONFIG . '</h4>';
             xoops_confirm( array( 'op' => 'delete', 'marqueeid' => $_GET['marqueeid'], 'ok' => 1 ), 'marquee.php', _AM_MARQUEE_RUSUREDEL );			
         } else {
@@ -249,7 +249,7 @@ switch ($op)
 	// Display the form to add an element
     case 'addmarquee':
     	xoops_cp_header();
-        echo $marquee_admin->addNavigation('marquee.php');	
+        echo $marqueeAdmin->addNavigation('marquee.php');	
 		
     	echo '<br />';
     	AddEditMarqueeForm(0, 'verifytoadd', _AM_MARQUEE_CONFIG, '', '','','','',0, 0,'',0,0,0,0,0, _AM_MARQUEE_ADDBUTTON,'fixed');
@@ -258,7 +258,7 @@ switch ($op)
 	// Default action, list all elements
     case 'default':
         xoops_cp_header();
-        echo $marquee_admin->addNavigation('marquee.php');		
+        echo $marqueeAdmin->addNavigation('marquee.php');		
 
 //        echo '<h4>' . _AM_MARQUEE_CONFIG . "</h4><br />\n";
         echo"<table width='100%' border='0' cellspacing='1' class='outer'>\n";
@@ -273,8 +273,8 @@ switch ($op)
 //				$action_edit="<a href='".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid')."'>"._AM_MARQUEE_EDIT."</a>";
 //				$action_delete="<a href='".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid')."'>"._AM_MARQUEE_DELETE."</a>";
 
-                $action_edit="<a href='".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid')."'><img src='../images/icons/edit.png' title='"._AM_MARQUEE_EDIT."'></a>";
-                $action_delete="<a href='".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid')."'><img src='../images/icons/delete.png' title='"._AM_MARQUEE_DELETE."'></a>";
+                $action_edit="<a href=".$baseurl."?op=edit&marqueeid=".$marquee->getVar('marquee_marqueeid').'><img src='. $pathImageIcon.'/edit.png title='._AM_MARQUEE_EDIT."></a>";
+                $action_delete="<a href=".$baseurl."?op=delete&marqueeid=".$marquee->getVar('marquee_marqueeid').'><img src='. $pathImageIcon.'/delete.png title='._AM_MARQUEE_DELETE.'></a>';
 
 				$direction=$tbldirection[$marquee->getVar('marquee_direction')];
 				$behaviour=$tblbehaviour[$marquee->getVar('marquee_behaviour')];
@@ -296,7 +296,5 @@ switch ($op)
         break;
 }
 
-echo $marquee_admin->renderabout();
-include "footer.php";
-xoops_cp_footer();
-?>
+include "admin_footer.php";
+//xoops_cp_footer();
