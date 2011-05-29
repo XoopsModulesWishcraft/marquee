@@ -24,7 +24,7 @@ if (!defined('XOOPS_ROOT_PATH')) {
 	die('XOOPS root path not defined');	
 }
 
-$module_dirname = basename( dirname( __FILE__ ) ) ;
+$moduleDirName = basename( dirname( __FILE__ ) ) ;
 
 $modversion['name'] = _MI_MARQUEE_NAME;
 $modversion['version'] = '2.49';
@@ -38,6 +38,7 @@ $modversion['license_url'] = "www.gnu.org/licenses/gpl-2.0.html/";
 $modversion['official'] = 0;
 $modversion['image'] = 'images/marquee_slogo.png';
 $modversion['dirname'] = 'marquee';
+$modversion['dirmoduleadmin'] = 'Frameworks/moduleclasses/moduleadmin';
 
 //about
 $modversion['release_date']     = '2011/04/20';

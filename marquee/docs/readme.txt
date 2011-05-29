@@ -4,6 +4,12 @@ README
 Marquee is a XOOPS module to create scrolling texts (marquees). You can create an unlimited number of marquees and use them in 4 blocks. Texts can scroll horizontally (from right to left or left to right) and vertically (from top to bottom and bottom to top)
 You can also set the loop, i.e. how many times should the marquee loop (from 1 to 100 times, and infinity).
 
+ Requirements
+ _____________________________________________________________________
+ 
+- PHP version >= 5.2.0
+- ModuleClasses in /Frameworks (download it from here: http://goo.gl/Bmknt)  
+
 Install/uninstall
 ---------------------
 No special measures necessary, follow the standard installation process – extract the /marquee folder into the ../modules directory. Install the module through Admin -> System Module -> Modules.
