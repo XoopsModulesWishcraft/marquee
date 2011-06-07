@@ -41,7 +41,7 @@ define("_MI_MARQUEE_DATEFORMAT_DESC","Please refer to the Php documentation (htt
 define("_MI_MARQUE_ITEMSCOUNT","Items count");
 define("_MI_MARQUE_ITEMSCOUNT_DESC","When you select to use the content of another module (and not a fixed text) to create Marquees, this is the number of items to list");
 define("_MI_MARQUE_TITLELENGTH","Titles length");
-define("_MI_MARQUE_TITLELENGTH_DESC","Define the maximum lenght for the items titles (0=no limit)");
+define("_MI_MARQUE_TITLELENGTH_DESC","Define the maximum length for the items titles (0=no limit)");
 
 define("_MI_MARQUEE_TEXT_EDITOR", "Text editor to use");
 define("_MI_MARQUEE_FORM_COMPACT","Compact");
@@ -55,7 +55,7 @@ define("_MI_MARQUEE_FORM_TINYEDITOR","TinyEditor");
 //2.48
 // index.php
 
-define('_MI_MARQUEE_MENU_00',"Home"); 
+define('_MI_MARQUEE_MENU_00',"Home");
 define("_MI_MARQUEE_ADMIN_HOME_DESC","Back to Home");
 
 define("_MI_MARQUEE_ADMIN_ABOUT" , "About");
