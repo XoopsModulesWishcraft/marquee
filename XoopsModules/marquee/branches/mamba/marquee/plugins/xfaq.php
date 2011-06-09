@@ -27,7 +27,7 @@ function b_marquee_xfaq($limit, $dateformat, $itemssize)
   $block=array();
   $myts =& MyTextSanitizer::getInstance();
   $db =& Database::getInstance();
-  $result = $db->query("SELECT f.*, t.topic_title FROM ".$db->prefix("xfaq_faq")." f, ".$db->prefix("xfaq_topic")." t WHERE f.faq_online>0 AND (f.faq_topic=t.topic_id) ORDER BY faq_date_created DESC",$limit,0);
+  $result = $db->query("SELECT f.*, t.topic_title, t.topic_submitter FROM ".$db->prefix("xfaq_faq")." f, ".$db->prefix("xfaq_topic")." t WHERE f.faq_online>0 AND (f.faq_topic=t.topic_id) ORDER BY faq_date_created DESC",$limit,0);
   while($myrow = $db->fetchArray($result)) {
     $title = $myts->htmlSpecialChars($myrow["faq_question"]);
     if($itemssize>0) {
@@ -35,7 +35,7 @@ function b_marquee_xfaq($limit, $dateformat, $itemssize)
     }
     $block[]=array(	'date'	=> formatTimestamp($myrow['faq_date_created'],$dateformat),
                     'category' =>$myts->htmlSpecialChars($myrow['topic_title']),
-                    'author'=> intval($myrow['topic_submitter']),
+                    'author'=> XoopsUser::getUnameFromId(intval($myrow['topic_submitter'])),
                     'title'=> $title,
                     'link' =>"<a href='" . XOOPS_URL . "/modules/xfaq/faq.php?faq_id=" . $myrow['faq_id'] . "'>{$title}</a>"
             );
