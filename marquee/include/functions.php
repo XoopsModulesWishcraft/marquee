@@ -103,4 +103,3 @@ function marquee_javascript_escape($string)
 {
 	return str_replace("'","\\'",$string);
 }
-?>

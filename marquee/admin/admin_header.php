@@ -24,7 +24,7 @@ if ( file_exists($GLOBALS['xoops']->path('/Frameworks/moduleclasses/moduleadmin/
         include_once $GLOBALS['xoops']->path('/Frameworks/moduleclasses/moduleadmin/moduleadmin.php');
         //return true;
     }else{
-        echo xoops_error("Error: You don't use the Frameworks \"admin module\". Please install this Frameworks");
+        redirect_header("../../../admin.php", 5, _AM_MODULEADMIN_MISSING, false); 
         //return false;
     }
 
