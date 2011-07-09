@@ -83,4 +83,5 @@ define("_AM_MARQUEE_CONFIG_CHECK","Configuration Check");
 define("_AM_MARQUEE_CONFIG_PHP","Minimum PHP required: %s (your version is %s)");
 define("_AM_MARQUEE_CONFIG_XOOPS","Minimum XOOPS required:  %s (your version is %s)");
 
-?>
+//ModuleAdmin
+define('_AM_MODULEADMIN_MISSING','Error: The ModuleAdmin class is missing. Please install the ModuleAdmin Class into /Frameworks (see /docs/readme.txt)');
