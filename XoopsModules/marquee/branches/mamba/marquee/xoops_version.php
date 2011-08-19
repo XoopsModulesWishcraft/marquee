@@ -38,7 +38,9 @@ $modversion['license_url'] = "www.gnu.org/licenses/gpl-2.0.html/";
 $modversion['official'] = 0;
 $modversion['image'] = 'images/marquee_slogo.png';
 $modversion['dirname'] = 'marquee';
-$modversion['dirmoduleadmin'] = 'Frameworks/moduleclasses/moduleadmin';
+$modversion['dirmoduleadmin'] = 'Frameworks/moduleclasses';
+$modversion['icons16'] = 'Frameworks/moduleclasses/icons/16';
+$modversion['icons32'] = 'Frameworks/moduleclasses/icons/32';
 
 //about
 $modversion['release_date']     = '2011/04/20';
