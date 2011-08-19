@@ -48,7 +48,6 @@ define("_AM_MARQUEE_SCRDELAY","ÊÃÎםÑ Èםה<br />ÇבÍÑ‗Êםה ÈÇבדםבםËÇהםÉ");
 define("_AM_MARQUEE_ERROR_MODIFY_DB","םזÌÏ ÎØÃ ÈםהדÇ םÊד ÊÍÏםË ÞÇÚÏÉ ÇבÈםÇהÇÊ");
 define("_AM_MARQUEE_SOURCE","דÕÏÑ ÇבדÍÊזל");
 define("_AM_MARQUEE_SOURCE_FIXED","דÚÇבÌÉ ÇבהÕ");
-
 //2.4.8
 
 // About.php

@@ -29,8 +29,8 @@ if ( file_exists($GLOBALS['xoops']->path('/Frameworks/moduleclasses/moduleadmin/
     }
 
 $moduleInfo =& $module_handler->get($xoopsModule->getVar('mid'));
-$pathImageIcon = XOOPS_URL .'/'. $moduleInfo->getInfo('dirmoduleadmin').'/images/action';
-$pathImageAdmin = XOOPS_URL .'/'. $moduleInfo->getInfo('dirmoduleadmin').'/images/admin';
+$pathImageIcon = XOOPS_URL .'/'. $moduleInfo->getInfo('icons16');
+$pathImageAdmin = XOOPS_URL .'/'. $moduleInfo->getInfo('icons32');
 
 $myts =& MyTextSanitizer::getInstance();
 

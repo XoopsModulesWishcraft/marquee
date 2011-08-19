@@ -7,6 +7,7 @@ You can also set the loop, i.e. how many times should the marquee loop (from 1 t
  Requirements
  _____________________________________________________________________
  
+- XOOPS >= 2.5.0
 - PHP version >= 5.2.0
 - ModuleClasses in /Frameworks (download it from here: http://goo.gl/Bmknt)  
 
