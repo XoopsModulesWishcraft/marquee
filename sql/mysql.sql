@@ -16,4 +16,4 @@ CREATE TABLE marquee (
   marquee_content text NOT NULL,
   marquee_source varchar(255) NOT NULL default 'fixed',
   PRIMARY KEY  (marquee_marqueeid)
-) TYPE=MyISAM AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM AUTO_INCREMENT=1 ;
