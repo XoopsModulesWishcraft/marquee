@@ -16,7 +16,7 @@
  * @package         marquee
  * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
  *
- * Version : $Id:
+ * @version		    $Id $
  * ****************************************************************************
  */
 
@@ -291,7 +291,9 @@ switch ($op)
         	}
         }
 
-		echo "<tr class='".$class."'><td colspan='7' align='center'><form name='faddmarquee' method='post' action='marquee.php'><input type='hidden' name='op' value='addmarquee' /><input type='submit' name='submit' value='"._AM_MARQUEE_ADDMARQUEE."' /></td></tr>";
+//		echo "<tr class='".$class."'><td colspan='7' align='center'><form name='faddmarquee' method='post' action='marquee.php'><input type='hidden' name='op' value='addmarquee' /><input type='submit' name='submit' value='"._AM_MARQUEE_ADDMARQUEE."' /></td></tr>";
+        $marqueeAdmin->addItemButton(_AM_MARQUEE_ADDMARQUEE, 'marquee.php?op=addmarquee', 'add' , '');
+        echo $marqueeAdmin->renderButton('right', '');
         echo '</table>';
         break;
 }

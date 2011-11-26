@@ -15,8 +15,7 @@
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
  * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
- *
- * Version : $Id:
+ * @version		    $Id $
  * ****************************************************************************
  */
 
@@ -24,7 +23,7 @@ if (!defined('XOOPS_ROOT_PATH')) {
 	die('XOOPS root path not defined');
 }
 
-include_once XOOPS_ROOT_PATH.'/class/xoopsobject.php';
+include_once XOOPS_ROOT_PATH.'/kernel/object.php';
 include_once XOOPS_ROOT_PATH.'/modules/marquee/include/functions.php';
 if (!class_exists('marquee_XoopsPersistableObjectHandler')) {
 	include_once XOOPS_ROOT_PATH.'/modules/marquee/class/PersistableObjectHandler.php';

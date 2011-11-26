@@ -15,8 +15,7 @@
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
  * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
- *
- * Version : $Id:
+ * @version		    $Id $
  * ****************************************************************************
  */
 
@@ -26,7 +25,7 @@ function b_marquee_xoopsfaq($limit, $dateformat, $itemssize)
 	include_once XOOPS_ROOT_PATH.'/modules/marquee/include/functions.php';
 	$block=array();
 	$myts =& MyTextSanitizer::getInstance();
-	$db =& Database::getInstance();
+	$db =& XoopsDatabaseFactory::getDatabaseConnection();
 	$result = $db->query("SELECT c.*, t.category_title FROM ".$db->prefix("xoopsfaq_contents")." c, ".$db->prefix("xoopsfaq_categories")." t WHERE c.contents_visible>0 AND (c. category_id=t.category_id) ORDER BY contents_time DESC",$limit,0);
 	while($myrow = $db->fetchArray($result)) {
 		$title = $myts->htmlSpecialChars($myrow["contents_title"]);
