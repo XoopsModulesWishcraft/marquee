@@ -15,8 +15,7 @@
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
  * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
- *
- * Version : $Id:
+ * @version		    $Id $
  * ****************************************************************************
  */
 
@@ -26,7 +25,7 @@ function b_marquee_xfaq($limit, $dateformat, $itemssize)
   include_once XOOPS_ROOT_PATH.'/modules/marquee/include/functions.php';
   $block=array();
   $myts =& MyTextSanitizer::getInstance();
-  $db =& Database::getInstance();
+  $db =& XoopsDatabaseFactory::getDatabaseConnection();
   $result = $db->query("SELECT f.*, t.topic_title, t.topic_submitter FROM ".$db->prefix("xfaq_faq")." f, ".$db->prefix("xfaq_topic")." t WHERE f.faq_online>0 AND (f.faq_topic=t.topic_id) ORDER BY faq_date_created DESC",$limit,0);
   while($myrow = $db->fetchArray($result)) {
     $title = $myts->htmlSpecialChars($myrow["faq_question"]);

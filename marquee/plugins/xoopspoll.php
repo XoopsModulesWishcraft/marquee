@@ -15,8 +15,7 @@
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
  * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
- *
- * Version : $Id:
+ * @version		    $Id $
  * ****************************************************************************
  */
 
@@ -26,7 +25,7 @@ function b_marquee_xoopspoll($limit, $dateformat, $itemssize)
 	include_once XOOPS_ROOT_PATH.'/modules/marquee/include/functions.php';
 	$block=array();
 	$myts =& MyTextSanitizer::getInstance();
-	$db =& Database::getInstance();
+	$db =& XoopsDatabaseFactory::getDatabaseConnection();
 	$result = $db->query("SELECT * FROM ".$db->prefix("xoopspoll_desc")." WHERE start_time<=".time()." and end_time>".time()." ORDER BY start_time DESC",$limit,0);
 	while($myrow = $db->fetchArray($result)) {
 		$title = $myts->htmlSpecialChars($myrow["question"]);

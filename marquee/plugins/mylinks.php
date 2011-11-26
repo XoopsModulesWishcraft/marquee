@@ -15,8 +15,7 @@
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
  * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
- *
- * Version : $Id:
+ * @version		    $Id $
  * ****************************************************************************
  */
 
@@ -27,7 +26,7 @@ function b_marquee_mylinks($limit, $dateformat, $itemssize)
 	include_once XOOPS_ROOT_PATH.'/include/comment_constants.php';
 	$block=array();
 	$myts =& MyTextSanitizer::getInstance();
-	$db =& Database::getInstance();
+	$db =& XoopsDatabaseFactory::getDatabaseConnection();
 	$result = $db->query("SELECT m.lid, m.cid, m.title, m.date, m.hits, m.submitter, c.title as catitle FROM ".$db->prefix("mylinks_links")." m, ".$db->prefix("mylinks_cat")." c WHERE (c.cid=m.cid) AND (m.status>0) ORDER BY date DESC",$limit,0);
 	while($myrow = $db->fetchArray($result)) {
 		$title = $myts->htmlSpecialChars($myrow["title"]);
