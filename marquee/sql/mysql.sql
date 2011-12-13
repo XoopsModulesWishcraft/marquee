@@ -4,7 +4,7 @@ CREATE TABLE marquee (
   marquee_direction smallint(6) NOT NULL default '0',
   marquee_scrollamount int(11) NOT NULL default '0',
   marquee_behaviour smallint(6) NOT NULL default '0',
-  marquee_bgcolor varchar(6) NOT NULL default '',
+  marquee_bgcolor varchar(7) NOT NULL default '',
   marquee_align smallint(6) NOT NULL default '0',
   marquee_height smallint(6) NOT NULL default '0',
   marquee_width varchar(4) NOT NULL default '',

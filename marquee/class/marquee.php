@@ -39,7 +39,7 @@ class marquee extends marquee_Object
 		$this->initVar('marquee_direction',XOBJ_DTYPE_INT,null,false);
 		$this->initVar('marquee_scrollamount',XOBJ_DTYPE_INT,null,false);
 		$this->initVar('marquee_behaviour',XOBJ_DTYPE_INT,null,false);
-		$this->initVar('marquee_bgcolor',XOBJ_DTYPE_TXTBOX, null, false,6);
+		$this->initVar('marquee_bgcolor',XOBJ_DTYPE_TXTBOX, null, false,7);
 		$this->initVar('marquee_align',XOBJ_DTYPE_INT,null,false);
 		$this->initVar('marquee_height',XOBJ_DTYPE_INT,null,false);
 		$this->initVar('marquee_width',XOBJ_DTYPE_TXTBOX, null, false,4);

@@ -37,9 +37,9 @@ $modversion['license_url'] = "www.gnu.org/licenses/gpl-2.0.html/";
 $modversion['official'] = 0;
 $modversion['image'] = 'images/marquee_slogo.png';
 $modversion['dirname'] = 'marquee';
-$modversion['dirmoduleadmin'] = 'Frameworks/moduleclasses';
-$modversion['icons16'] = 'Frameworks/moduleclasses/icons/16';
-$modversion['icons32'] = 'Frameworks/moduleclasses/icons/32';
+$modversion['dirmoduleadmin'] = '/Frameworks/moduleclasses/moduleadmin';
+$modversion['icons16'] = '../../Frameworks/moduleclasses/icons/16';
+$modversion['icons32'] = '../../Frameworks/moduleclasses/icons/32';
 
 //about
 $modversion['release_date']     = '2011/11/25';
@@ -52,6 +52,9 @@ $modversion['min_php']='5.2';
 $modversion['min_xoops']="2.5";
 $modversion['min_admin']='1.1';
 $modversion['min_db']= array('mysql'=>'5.0.7', 'mysqli'=>'5.0.7');
+
+//update
+$modversion['onUpdate'] = 'include/update.php';
 
 // SQL Tables
 $modversion['sqlfile']['mysql'] = 'sql/mysql.sql';

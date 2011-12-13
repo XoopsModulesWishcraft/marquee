@@ -17,11 +17,7 @@
  * @version    $Id $
  **/
 
-include '../../../include/cp_header.php';
-include '../../../class/xoopsformloader.php';
-include 'admin_header.php';
-
-//$moduleInfo =& $module_handler->get($xoopsModule->getVar("mid"));
+include_once dirname(__FILE__) . '/admin_header.php';
 
 xoops_cp_header();
 

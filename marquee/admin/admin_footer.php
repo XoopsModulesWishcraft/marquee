@@ -17,6 +17,11 @@
  * @version	$Id $
 **/
 
-echo "<div align=\"center\"><a href=\"http://www.xoops.org\" target=\"_blank\"><img src=" . XOOPS_URL ."/". $moduleInfo->getInfo("icons32")."/xoopsmicrobutton.gif"." alt=\"XOOPS\" title=\"XOOPS\"></a></div>";
-echo "<div class='center smallsmall italic pad5'><strong>" . $xoopsModule->getVar("name") . "</strong> is maintained by the <a class='tooltip' rel='external' href='http://www.xoops.org/' title='Visit XOOPS Community'>XOOPS Community</a></div>";
+echo "<div class='adminfooter'>\n"
+    ."  <div style='text-align: center;'>\n"
+    ."    <a href='http://www.xoops.org' target='_blank'><img src='{$pathIcon32}/xoopsmicrobutton.gif' alt='XOOPS' title='XOOPS'></a>\n"
+    ."  </div>\n"
+    ."  " . _AM_ADMIN_FOOTER . "\n"
+    ."</div>";
+
 xoops_cp_footer();

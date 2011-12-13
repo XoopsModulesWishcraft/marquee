@@ -1,6 +1,8 @@
-v2.49 2011/03/31:
+v2.49 2011/12/12 Final:
 =================================
-- Updated to ModuleClasses 1.1 (Mage, mamba)
+- updated to ModuleClasses 1.1 (mamba)
+- added ColorPicker to form (mamba)
+- added update.php to increase background color size in DB
 
 
 v2.48 2011/02/23:

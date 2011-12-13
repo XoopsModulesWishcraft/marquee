@@ -20,8 +20,10 @@
  * ****************************************************************************
  */
 
-require_once '../../../include/cp_header.php';
-include 'admin_header.php';
+
+require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/include/cp_header.php';
+include_once dirname(__FILE__) . '/admin_header.php';
+
 xoops_cp_header();
 
 	$indexAdmin = new ModuleAdmin();
@@ -30,4 +32,3 @@ xoops_cp_header();
     echo $indexAdmin->renderIndex();
 
 include "admin_footer.php";
-?>
