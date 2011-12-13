@@ -16,44 +16,30 @@
  * @author 	XOOPS Module Team
  * @version	$Id $
 **/
-include_once dirname(dirname(dirname(dirname(__FILE__)))) . '/mainfile.php';
-include_once XOOPS_ROOT_PATH . '/include/cp_functions.php';
-//include("../../../include/cp_header.php");
 
-if ( file_exists($GLOBALS['xoops']->path('/Frameworks/moduleclasses/moduleadmin/moduleadmin.php'))){
-        include_once $GLOBALS['xoops']->path('/Frameworks/moduleclasses/moduleadmin/moduleadmin.php');
-        //return true;
+$path = dirname(dirname(dirname(dirname(__FILE__))));
+include_once $path . '/mainfile.php';
+include_once $path . '/include/cp_functions.php';
+require_once $path . '/include/cp_header.php';
+
+global $xoopsModule;
+
+$thisModuleDir = $GLOBALS['xoopsModule']->getVar('dirname');
+
+//if functions.php file exist
+require_once dirname(dirname(__FILE__)) . '/include/functions.php';
+
+// Load language files
+xoops_loadLanguage('admin', $thisModuleDir);
+xoops_loadLanguage('modinfo', $thisModuleDir);
+xoops_loadLanguage('main', $thisModuleDir);
+
+$pathIcon16 = '../'.$xoopsModule->getInfo('icons16');
+$pathIcon32 = '../'.$xoopsModule->getInfo('icons32');
+$pathModuleAdmin = $xoopsModule->getInfo('dirmoduleadmin');
+
+if ( file_exists($GLOBALS['xoops']->path($pathModuleAdmin.'/moduleadmin.php'))){
+        include_once $GLOBALS['xoops']->path($pathModuleAdmin.'/moduleadmin.php');
     }else{
-        redirect_header("../../../admin.php", 5, _AM_MODULEADMIN_MISSING, false); 
-        //return false;
+        redirect_header("../../../admin.php", 5, _AM_MODULEADMIN_MISSING, false);
     }
-
-$moduleInfo =& $module_handler->get($xoopsModule->getVar('mid'));
-$pathImageIcon = XOOPS_URL .'/'. $moduleInfo->getInfo('icons16');
-$pathImageAdmin = XOOPS_URL .'/'. $moduleInfo->getInfo('icons32');
-
-$myts =& MyTextSanitizer::getInstance();
-
-if ($xoopsUser) {
-    $moduleperm_handler =& xoops_gethandler('groupperm');
-    if (!$moduleperm_handler->checkRight('module_admin', $xoopsModule->getVar( 'mid' ), $xoopsUser->getGroups())) {
-        redirect_header(XOOPS_URL, 1, _NOPERM);
-        exit();
-    }
-} else {
-    redirect_header(XOOPS_URL . "/user.php", 1, _NOPERM);
-    exit();
-}
-
-if (!isset($xoopsTpl) || !is_object($xoopsTpl)) {
-	include_once(XOOPS_ROOT_PATH."/class/template.php");
-	$xoopsTpl = new XoopsTpl();
-}
-
-$xoopsTpl->assign('pathImageIcon', $pathImageIcon);
-//xoops_cp_header();
-
-//Load languages
-xoops_loadLanguage('admin', $xoopsModule->getVar("dirname"));
-xoops_loadLanguage('modinfo', $xoopsModule->getVar("dirname"));
-xoops_loadLanguage('main', $xoopsModule->getVar("dirname"));
