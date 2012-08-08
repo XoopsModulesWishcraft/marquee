@@ -24,6 +24,7 @@
 function b_marquee_smartsection($limit, $dateformat, $itemssize)
 {
 	include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
+    xoops_load("xoopsuserutility");
 	$myts = &MyTextSanitizer::getInstance();
    	$smartModule =& smartsection_getModuleInfo();
 	$block = array();
@@ -43,7 +44,7 @@ function b_marquee_smartsection($limit, $dateformat, $itemssize)
 			}
 			$block[]=array(	'date'	=> $itemsObj[$i]->datesub(),
 							'category' => $itemsObj[$i]->getCategoryName(),
-							'author'=> xoops_getLinkedUnameFromId($itemsObj[$i]->uid()),
+							'author'=>XoopsUserUtility::getUnameFromId($itemsObj[$i]->uid()),
 							'title'=> $title,
 							'link' =>"<a href='".XOOPS_URL.'/modules/smartsection/item.php?itemid='.$itemsObj[$i]->itemid()."'>".$title.'</a>');
 		}

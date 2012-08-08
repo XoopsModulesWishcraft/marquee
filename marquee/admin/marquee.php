@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
+ * Copyright (c) Hervï¿½ Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,10 +11,10 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
+ * @copyright       Hervï¿½ Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
+ * @author 			Hervï¿½ Thouzard (http://www.herve-thouzard.com)
  *
  * @version		    $Id $
  * ****************************************************************************
@@ -288,7 +288,13 @@ switch ($op)
 				if($marquee->getVar('marquee_source') == 'fixed') {
 					$source = _AM_MARQUEE_SOURCE_FIXED;
 				}
-				echo "<tr class='".$class."'><td align='center'>" . $marquee->getVar('marquee_marqueeid') . "</td><td align='center'>" . xoops_substr(strip_tags($marquee->getVar('marquee_content')),0,60) . "</td><td align='center'>" . $bgcolorvalue ."</td><td align='center'>" . $behaviour . "</td><td align='center'>" . $source . "</td><td align='center'>". $stop . "</td><td align='center'>" . $direction . "</td><td align='center'>" . $action_edit . "&nbsp;&nbsp;" . $action_delete . "</td></tr>\n";
+				echo "<tr class='".$class."'><td align='center'>" . $marquee->getVar('marquee_marqueeid') . "</td><td align='center'>" . xoops_substr(strip_tags($marquee->getVar('marquee_content')),0,60)
+                    ."</td><td align='center'>"
+                    ."<div style='height:12px; width:12px; background-color:".$bgcolorvalue."; border:1px solid black;float:left; margin-right:5px;'></div>"
+                    . $bgcolorvalue
+
+
+                    ."</td><td align='center'>" . $behaviour . "</td><td align='center'>" . $source . "</td><td align='center'>". $stop . "</td><td align='center'>" . $direction . "</td><td align='center'>" . $action_edit . "&nbsp;&nbsp;" . $action_delete . "</td></tr>\n";
 				$class = ($class == 'even') ? 'odd' : 'even';
         	}
         }

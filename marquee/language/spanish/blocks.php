@@ -2,9 +2,8 @@
 /**
  * ****************************************************************************
  * Marquee - MODULE FOR XOOPS
- * Copyright (c) HervÈ Thouzard (http://www.herve-thouzard.com)
+ * Copyright (c) Herv√© Thouzard (http://www.herve-thouzard.com)
  * ****************************************************************************
  */
 
-define("_MB_MARQUEE_SELECT","Defina quÈ marquesina se usar·");
-?>
+define("_MB_MARQUEE_SELECT","Defina qu√© marquesina se usar√°");

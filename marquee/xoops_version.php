@@ -26,7 +26,7 @@ if (!defined('XOOPS_ROOT_PATH')) {
 $moduleDirName = basename( dirname( __FILE__ ) ) ;
 
 $modversion['name'] = _MI_MARQUEE_NAME;
-$modversion['version'] = '2.49';
+$modversion['version'] = '2.50';
 $modversion['description'] = _MI_MARQUEE_DESC;
 $modversion['credits'] = "Carnuke, defkon1, the Newbb team, Mage, Mamba";
 $modversion['author'] = 'Hervé Thouzard';
@@ -43,13 +43,13 @@ $modversion['icons32'] = '../../Frameworks/moduleclasses/icons/32';
 
 //about
 $modversion['release_date']     = '2011/11/25';
-$modversion["module_website_url"] = "http://www.xoops.org/";
+$modversion["module_website_url"] = "www.xoops.org/";
 $modversion["module_website_name"] = "XOOPS";
-$modversion["module_status"] = "Final";
+$modversion["module_status"] = "RC 1";
 $modversion["author_website_url"] = "http://www.herve-thouzard.com/";
 $modversion["author_website_name"] = "Hervé Thouzard";
 $modversion['min_php']='5.2';
-$modversion['min_xoops']="2.5";
+$modversion['min_xoops']="2.5.5";
 $modversion['min_admin']='1.1';
 $modversion['min_db']= array('mysql'=>'5.0.7', 'mysqli'=>'5.0.7');
 

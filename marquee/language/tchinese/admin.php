@@ -48,30 +48,4 @@ define("_AM_MARQUEE_SOURCE","Content's source");
 define("_AM_MARQUEE_SOURCE_FIXED","A fixed text");
 
 //2.4.8
-
-// About.php
-define("_AM_MARQUEE_ABOUT_RELEASEDATE",              "Released: ");
-define("_AM_MARQUEE_ABOUT_UPDATEDATE",               "Updated: ");
-define("_AM_MARQUEE_ABOUT_AUTHOR",                   "Author: ");
-define("_AM_MARQUEE_ABOUT_CREDITS",                  "Credits: ");
-define("_AM_MARQUEE_ABOUT_LICENSE",                  "License: ");
-define("_AM_MARQUEE_ABOUT_MODULE_STATUS",            "Status: ");
-define("_AM_MARQUEE_ABOUT_WEBSITE",                  "Website: ");
-define("_AM_MARQUEE_ABOUT_AUTHOR_NAME",              "Author name: ");
-define("_AM_MARQUEE_ABOUT_CHANGELOG",                "Change Log");
-define("_AM_MARQUEE_ABOUT_MODULE_INFO",              "Module Info");
-define("_AM_MARQUEE_ABOUT_AUTHOR_INFO",              "Author Info");
-define("_AM_MARQUEE_ABOUT_DESCRIPTION",              "Description: ");
-
-// Configuration
-define("_AM_MARQUEE_CONFIG_CHECK","Configuration Check");
-define("_AM_MARQUEE_CONFIG_PHP","Minimum PHP required: %s (your version is %s)");
-define("_AM_MARQUEE_CONFIG_XOOPS","Minimum XOOPS required:  %s (your version is %s)");
-
-
-//ModuleAdmin
-define('_AM_MODULEADMIN_MISSING','Error: The ModuleAdmin class is missing. Please install the ModuleAdmin Class into /Frameworks (see /docs/readme.txt)');
 define("_AM_MARQUEE_BGCOLOR_SHORT","Background color");
-
-// Text for Admin footer
-define("_AM_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Marquee is maintained by the <a class='tooltip' rel='external' href='http://xoops.org/' title='Visit XOOPS Community'>XOOPS Community</a></div>");
