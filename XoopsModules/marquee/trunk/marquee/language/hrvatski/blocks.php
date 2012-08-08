@@ -1,7 +1,7 @@
 <?php
 //  ------------------------------------------------------------------------ //
 //                      MARQUEE - MODULE FOR XOOPS 2                         //
-//                  Copyright (c) 2005-2006 Hervé Thouzard                   //
+//                  Copyright (c) 2005-2006 HervÃ© Thouzard                   //
 //                     <http://www.herve-thouzard.com/>                      //
 // ------------------------------------------------------------------------- //
 //  This program is free software; you can redistribute it and/or modify     //
@@ -24,5 +24,5 @@
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA //
 //  ------------------------------------------------------------------------ //
 
-define("_MB_MARQUEE_SELECT","Izaberite klizni tekst za korištenje");
+define("_MB_MARQUEE_SELECT","Izaberite klizni tekst za koriÅ¡tenje");
 ?>

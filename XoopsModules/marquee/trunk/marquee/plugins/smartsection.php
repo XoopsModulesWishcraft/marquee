@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,10 +11,10 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * Version : $Id:
  * ****************************************************************************
@@ -24,6 +24,7 @@
 function b_marquee_smartsection($limit, $dateformat, $itemssize)
 {
 	include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
+    xoops_load("xoopsuserutility");
 	$myts = &MyTextSanitizer::getInstance();
    	$smartModule =& smartsection_getModuleInfo();
 	$block = array();
@@ -43,7 +44,7 @@ function b_marquee_smartsection($limit, $dateformat, $itemssize)
 			}
 			$block[]=array(	'date'	=> $itemsObj[$i]->datesub(),
 							'category' => $itemsObj[$i]->getCategoryName(),
-							'author'=> xoops_getLinkedUnameFromId($itemsObj[$i]->uid()),
+							'author'=>XoopsUserUtility::getUnameFromId($itemsObj[$i]->uid()),
 							'title'=> $title,
 							'link' =>"<a href='".XOOPS_URL.'/modules/smartsection/item.php?itemid='.$itemsObj[$i]->itemid()."'>".$title.'</a>');
 		}

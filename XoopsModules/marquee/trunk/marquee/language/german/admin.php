@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * Marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard (http://www.herve-thouzard.com)
  * ****************************************************************************
  */
 
@@ -13,13 +13,13 @@ define("_AM_MARQUEE_BEHAVIOUR","Verhalten");
 define("_AM_MARQUEE_STOP","Stop bei Mouseover");
 define("_AM_MARQUEE_CONTENT","Inhalt");
 define("_AM_MARQUEE_EDIT","Bearbeiten");
-define("_AM_MARQUEE_DELETE","Löschen");
+define("_AM_MARQUEE_DELETE","LÃ¶schen");
 define("_AM_MARQUEE_DIRECTION1","Rechts->Links");
 define("_AM_MARQUEE_DIRECTION2","Links->Rechts");
 define("_AM_MARQUEE_DIRECTION3","Oben->Unten");
 define("_AM_MARQUEE_DIRECTION4","Unten->Oben");
 define("_AM_MARQUEE_BEHAVIOUR1","Scrollen");
-define("_AM_MARQUEE_BEHAVIOUR2","Übergang");
+define("_AM_MARQUEE_BEHAVIOUR2","Ãœbergang");
 define("_AM_MARQUEE_BEHAVIOUR3","Wechseln");
 define("_AM_MARQUEE_ADDMARQUEE","Neuen Marquee hinzuf&uuml;gen");
 define("_AM_MARQUEE_ACTION","Aktion");
@@ -46,4 +46,6 @@ define("_AM_MARQUEE_SCRDELAY","Pause zwischen 2 Bewegungen in Millisekunden");
 define("_AM_MARQUEE_ERROR_MODIFY_DB","Fehler beim Aktualisieren der Datenbank");
 define("_AM_MARQUEE_SOURCE","Content's source");
 define("_AM_MARQUEE_SOURCE_FIXED","A fixed text");
-?>
+
+//2.4.8
+define("_AM_MARQUEE_BGCOLOR_SHORT","Background color");

@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,12 +11,11 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
- *
- * Version : $Id:
+ * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
+ * @version		    $Id $
  * ****************************************************************************
  */
 
@@ -24,7 +23,7 @@ if (!defined('XOOPS_ROOT_PATH')) {
 	die('XOOPS root path not defined');
 }
 
-include_once XOOPS_ROOT_PATH.'/class/xoopsobject.php';
+include_once XOOPS_ROOT_PATH.'/kernel/object.php';
 include_once XOOPS_ROOT_PATH.'/modules/marquee/include/functions.php';
 if (!class_exists('marquee_XoopsPersistableObjectHandler')) {
 	include_once XOOPS_ROOT_PATH.'/modules/marquee/class/PersistableObjectHandler.php';
@@ -40,7 +39,7 @@ class marquee extends marquee_Object
 		$this->initVar('marquee_direction',XOBJ_DTYPE_INT,null,false);
 		$this->initVar('marquee_scrollamount',XOBJ_DTYPE_INT,null,false);
 		$this->initVar('marquee_behaviour',XOBJ_DTYPE_INT,null,false);
-		$this->initVar('marquee_bgcolor',XOBJ_DTYPE_TXTBOX, null, false,6);
+		$this->initVar('marquee_bgcolor',XOBJ_DTYPE_TXTBOX, null, false,7);
 		$this->initVar('marquee_align',XOBJ_DTYPE_INT,null,false);
 		$this->initVar('marquee_height',XOBJ_DTYPE_INT,null,false);
 		$this->initVar('marquee_width',XOBJ_DTYPE_TXTBOX, null, false,4);

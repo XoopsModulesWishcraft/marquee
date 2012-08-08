@@ -17,8 +17,6 @@ class marquee_Object extends XoopsObject
 }
 
 
-
-
 /**
 * Persistable Object Handler class.
 * This class is responsible for providing data access mechanisms to the data source

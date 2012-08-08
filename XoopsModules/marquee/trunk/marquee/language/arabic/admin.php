@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * Marquee - MODULE FOR XOOPS
- * Copyright (c) HervÈ Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÈ Thouzard (http://www.herve-thouzard.com)
  * ****************************************************************************
  */
 
@@ -48,4 +48,6 @@ define("_AM_MARQUEE_SCRDELAY"," √ŒÌ— »Ì‰<br />«·Õ—ﬂ Ì‰ »«·„Ì·ÌÀ«‰Ì…");
 define("_AM_MARQUEE_ERROR_MODIFY_DB","ÌÊÃœ Œÿ√ »Ì‰„« Ì „  ÕœÌÀ ﬁ«⁄œ… «·»Ì«‰« ");
 define("_AM_MARQUEE_SOURCE","„’œ— «·„Õ ÊÏ");
 define("_AM_MARQUEE_SOURCE_FIXED","„⁄«·Ã… «·‰’");
-?>
+
+//2.4.8
+define("_AM_MARQUEE_BGCOLOR_SHORT","Background color");
