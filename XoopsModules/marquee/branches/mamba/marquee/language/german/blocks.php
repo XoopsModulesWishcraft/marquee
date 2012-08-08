@@ -2,9 +2,9 @@
 /**
  * ****************************************************************************
  * Marquee - MODULE FOR XOOPS
- * Copyright (c) Herv� Thouzard (http://www.herve-thouzard.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  * ****************************************************************************
  */
 
-define("_MB_MARQUEE_SELECT","Marque w&auml;hlen");
+define("_MB_MARQUEE_SELECT","Marque wählen");
 ?>

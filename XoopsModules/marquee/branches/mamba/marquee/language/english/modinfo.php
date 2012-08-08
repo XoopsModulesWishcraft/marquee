@@ -19,18 +19,18 @@
  * Version : $Id:
  * ****************************************************************************
  */
-define("_MI_MARQUEE_NAME",		"Marquee");
-define("_MI_MARQUEE_DESC",		"Enable you to create scrolling texts (marquees)");
-define("_MI_MARQUEE_BNAME_01",	"Marquee 01");
-define("_MI_MARQUEE_BDESC_01",	"Display marquee 01");
-define("_MI_MARQUEE_BNAME_02",	"Marquee 02");
-define("_MI_MARQUEE_BDESC_02",	"Display marquee 02");
-define("_MI_MARQUEE_BNAME_03",	"Marquee 03");
-define("_MI_MARQUEE_BDESC_03",	"Display marquee 03");
-define("_MI_MARQUEE_BNAME_04",	"Marquee 04");
-define("_MI_MARQUEE_BDESC_04",	"Display marquee 04");
-define("_MI_MARQUEE_MENU_01",	"Manage marquees");
-define("_MI_MARQUEE_USE_KIOVI", "Use kiovi ?");
+define("_MI_MARQUEE_NAME","Marquee");
+define("_MI_MARQUEE_DESC","Enable you to create scrolling texts (marquees)");
+define("_MI_MARQUEE_BNAME_01","Marquee 01");
+define("_MI_MARQUEE_BDESC_01","Display marquee 01");
+define("_MI_MARQUEE_BNAME_02","Marquee 02");
+define("_MI_MARQUEE_BDESC_02","Display marquee 02");
+define("_MI_MARQUEE_BNAME_03","Marquee 03");
+define("_MI_MARQUEE_BDESC_03","Display marquee 03");
+define("_MI_MARQUEE_BNAME_04","Marquee 04");
+define("_MI_MARQUEE_BDESC_04","Display marquee 04");
+define("_MI_MARQUEE_MENU_01","Manage marquees");
+define("_MI_MARQUEE_USE_KIOVI","Use kiovi ?");
 define("_MI_MARQUEE_USE_KIOVI_DESC","If it is detected then Kiovi will be used");
 define("_MI_MARQUEE_METHOD","Method to use");
 define("_MI_MARQUEE_METHOD_DESC","If you select the 'Marquee' method then the module will use the html marquee's tag, this method is not compatible with all navigators but offers many options.<br>If you select the 'dhtml' method, then the marquee should run with more navigators but it will require more code in your page and you will have less options");
@@ -43,22 +43,4 @@ define("_MI_MARQUE_ITEMSCOUNT_DESC","When you select to use the content of anoth
 define("_MI_MARQUE_TITLELENGTH","Titles length");
 define("_MI_MARQUE_TITLELENGTH_DESC","Define the maximum length for the items titles (0=no limit)");
 
-define("_MI_MARQUEE_TEXT_EDITOR", "Text editor to use");
-define("_MI_MARQUEE_FORM_COMPACT","Compact");
-define("_MI_MARQUEE_FORM_DHTML","DHTML");
-define("_MI_MARQUEE_FORM_SPAW","Spaw Editor");
-define("_MI_MARQUEE_FORM_HTMLAREA","HtmlArea Editor");
-define("_MI_MARQUEE_FORM_FCK","FCK Editor");
-define("_MI_MARQUEE_FORM_KOIVI","Koivi Editor");
-define("_MI_MARQUEE_FORM_TINYEDITOR","TinyEditor");
-
-//2.48
-// index.php
-
-define('_MI_MARQUEE_MENU_00',"Home");
-define("_MI_MARQUEE_ADMIN_HOME_DESC","Back to Home");
-
-define("_MI_MARQUEE_ADMIN_ABOUT" , "About");
-define("_MI_MARQUEE_ADMIN_ABOUT_DESC" , "About this module");
-
-?>
+define("_MI_MARQUEE_TEXT_EDITOR","Text editor to use");
