@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,10 +11,10 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * Version : $Id:
  * ****************************************************************************
@@ -31,8 +31,8 @@ if (!defined('XOOPS_ROOT_PATH')) {
  * Return's a module's option (for the news module)
  *
  * @package Marquee
- * @author Instant Zero (http://www.instant-zero.com)
- * @copyright	(c) Instant Zero
+ * @author Hervé Thouzard (http://www.herve-thouzard.com)
+ * @copyright	(c) Hervé Thouzard
  * @param string $option	module option's name
  */
 function marquee_getmoduleoption($option, $repmodule = 'marquee')
@@ -70,8 +70,8 @@ function marquee_getmoduleoption($option, $repmodule = 'marquee')
  * return false;
  *
  * @package Marquee
- * @author Instant Zero (http://www.instant-zero.com)
- * @copyright	(c) Instant Zero
+ * @author Hervé Thouzard (http://www.herve-thouzard.com)
+ * @copyright	(c) Hervé Thouzard
  */
 function marquee_isbot()
 {
@@ -103,4 +103,3 @@ function marquee_javascript_escape($string)
 {
 	return str_replace("'","\\'",$string);
 }
-?>

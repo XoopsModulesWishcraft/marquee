@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,12 +11,11 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
- *
- * Version : $Id:
+ * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
+ * @version		    $Id $
  * ****************************************************************************
  */
 
@@ -48,7 +47,7 @@ function b_marquee_newbb($limit, $dateformat, $itemssize)
 	    $forum_criteria = ' AND t.forum_id IN (' . implode(',', $valid_forums) . ')';
 	    unset($access_forums);
 	    $approve_criteria = ' AND t.approved = 1 AND p.approved = 1';
-	    $db =& Database::getInstance();
+	    $db =& XoopsDatabaseFactory::getDatabaseConnection();
         $query = 'SELECT t.*, f.forum_name, f.allow_subject_prefix, p.post_id, p.icon, p.uid, p.poster_name, u.uname, u.name FROM ' . $db->prefix('bb_topics') . ' t, ' . $db->prefix('bb_forums') . ' f, ' . $db->prefix('bb_posts') . ' p LEFT JOIN ' . $db->prefix("users") . ' u ON u.uid = p.uid WHERE f.forum_id=t.forum_id ' . $forum_criteria . $approve_criteria . ' AND t.topic_last_post_id=p.post_id ORDER BY ' . $order . ' DESC';
 	    $result = $db->query($query, $limit, 0);
     	if (!$result) {
@@ -74,7 +73,7 @@ function b_marquee_newbb($limit, $dateformat, $itemssize)
 							'link' => "<a href='" . XOOPS_URL . "/modules/newbb/viewtopic.php?topic_id=" . $arr['topic_id'] . "&amp;post_id=" . $arr['post_id'] . "#forumpost" . $arr['post_id'] . "'>" . $title . "</a>");
     	}
 	} else {	// Newbb 1
-	    $db =& Database::getInstance();
+	    $db =& XoopsDatabaseFactory::getDatabaseConnection();
 	    $myts =& MyTextSanitizer::getInstance();
     	$order = 't.topic_time';
 	    $query='SELECT t.topic_id, t.topic_title, t.topic_last_post_id, t.topic_time, t.topic_views, t.topic_replies, t.forum_id, f.forum_name FROM '.$db->prefix('bb_topics').' t, '.$db->prefix('bb_forums').' f WHERE f.forum_id=t.forum_id AND f.forum_type <> 1 ORDER BY '.$order.' DESC';

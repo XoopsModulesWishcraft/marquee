@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,10 +11,10 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       Hervé Thouzard (http://www.herve-thouzard.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			Hervé Thouzard (http://www.herve-thouzard.com)
  *
  * Version : $Id:
  * ****************************************************************************
@@ -43,11 +43,3 @@ define("_MI_MARQUE_ITEMSCOUNT_DESC","Lorsque vous choisissez d'utiliser le conte
 define("_MI_MARQUE_TITLELENGTH","Longeur des titres");
 define("_MI_MARQUE_TITLELENGTH_DESC","Définissez la longueur des titres des éléments (0=pas de limite)");
 define("_MI_MARQUEE_TEXT_EDITOR", "Editeur de texte à utiliser");
-define("_MI_MARQUEE_FORM_COMPACT","Compact");
-define("_MI_MARQUEE_FORM_DHTML","DHTML");
-define("_MI_MARQUEE_FORM_SPAW","Spaw Editor");
-define("_MI_MARQUEE_FORM_HTMLAREA","HtmlArea Editor");
-define("_MI_MARQUEE_FORM_FCK","FCK Editor");
-define("_MI_MARQUEE_FORM_KOIVI","Koivi Editor");
-define("_MI_MARQUEE_FORM_TINYEDITOR","TinyEditor");
-?>
