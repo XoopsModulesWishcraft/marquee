@@ -8,7 +8,7 @@
 
 define("_AM_MARQUEE_CONFIG","Configuración");
 define("_AM_MARQUEE_ID","ID");
-define("_AM_MARQUEE_GENERALSET", "Opciones del módulo" );
+define("_AM_MARQUEE_GENERALSET","Opciones del módulo");
 define("_AM_MARQUEE_MODULEADMIN","Administración del módulo");
 define("_AM_MARQUEE_DIRECTION","Dirección");
 define("_AM_MARQUEE_BEHAVIOUR","Comportamiento");

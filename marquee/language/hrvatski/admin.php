@@ -26,7 +26,7 @@
 
 define("_AM_MARQUEE_CONFIG","Marquees Podešavanja");
 define("_AM_MARQUEE_ID","ID");
-define("_AM_MARQUEE_GENERALSET", "Opcije modula" );
+define("_AM_MARQUEE_GENERALSET","Opcije modula");
 define("_AM_MARQUEE_MODULEADMIN","Administracija modula");
 define("_AM_MARQUEE_DIRECTION","Smjer");
 define("_AM_MARQUEE_BEHAVIOUR","Ponašanje");
