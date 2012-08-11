@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,21 +11,21 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         marquee
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author 			HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * Version : $Id:
  * ****************************************************************************
  */
 define("_AM_MARQUEE_CONFIG","Configuration des marquees");
 define("_AM_MARQUEE_ID","ID");
-define("_AM_MARQUEE_GENERALSET", "Options du module" );
+define("_AM_MARQUEE_GENERALSET","Options du module");
 define("_AM_MARQUEE_MODULEADMIN","Administration du module");
 define("_AM_MARQUEE_DIRECTION","Direction");
 define("_AM_MARQUEE_BEHAVIOUR","Comportement");
-define("_AM_MARQUEE_STOP","Arrêter au survol de la souris");
+define("_AM_MARQUEE_STOP","ArrÃªter au survol de la souris");
 define("_AM_MARQUEE_CONTENT","Contenu");
 define("_AM_MARQUEE_EDIT","Editer");
 define("_AM_MARQUEE_DELETE","Supprimer");
@@ -33,12 +33,12 @@ define("_AM_MARQUEE_DIRECTION1","Gauche->Droite");
 define("_AM_MARQUEE_DIRECTION2","Droite->Gauche");
 define("_AM_MARQUEE_DIRECTION3","Bas->Haut");
 define("_AM_MARQUEE_DIRECTION4","Haut->Bas");
-define("_AM_MARQUEE_BEHAVIOUR1","défile");
+define("_AM_MARQUEE_BEHAVIOUR1","dÃ©file");
 define("_AM_MARQUEE_BEHAVIOUR2","glisse");
-define("_AM_MARQUEE_BEHAVIOUR3","alterné");
+define("_AM_MARQUEE_BEHAVIOUR3","alternÃ©");
 define("_AM_MARQUEE_ADDMARQUEE","Ajouter un marquee");
 define("_AM_MARQUEE_ACTION","Action");
-define("_AM_MARQUEE_LOOP","Répétition");
+define("_AM_MARQUEE_LOOP","RÃ©pÃ©tition");
 define("_AM_MARQUEE_INFINITELOOP","Infini");
 define("_AM_MARQUEE_ALIGN","Alignement");
 define("_AM_MARQUEE_ALIGN1","Haut");
@@ -48,17 +48,17 @@ define("_AM_MARQUEE_ADDBUTTON","Ajouter");
 define("_AM_MARQUEE_RESETBUTTON","R&eacute;initialiser");
 define("_AM_MARQUEE_ERROR_ADD_MARQUEE","Erreur, les champs n&eacute;cessaires ne sont peut &ecirc;tre pas renseign&eacute;s");
 define("_AM_MARQUEE_ADDED_OK","Le marquee a &eacute;t&eacute; ajout&eacute; avec succ&eacute;s");
-define("_AM_MARQUEE_DBUPDATED","Mise à jour de la base de donn&eacute;es avec succ&eacute;s");
+define("_AM_MARQUEE_DBUPDATED","Mise Ã  jour de la base de donn&eacute;es avec succ&eacute;s");
 define("_AM_MARQUEE_RUSUREDEL","Etes-vous s&ucirc;r de vouloir supprimer cet &eacute;l&eacute;ment ?");
-define("_AM_MARQUEE_UPDATE","Mettre à jour");
-define("_AM_MARQUEE_BGCOLOR","Couleur de fond <br/>(pensez à mettre un #<br /> si vous spécifiez un code couleur)");
+define("_AM_MARQUEE_UPDATE","Mettre Ã  jour");
+define("_AM_MARQUEE_BGCOLOR","Couleur de fond <br/>(pensez Ã  mettre un #<br /> si vous spÃ©cifiez un code couleur)");
 define("_AM_MARQUEE_WIDTH","Largeur (en pixels ou en pourcentage)");
 define("_AM_MARQUEE_HEIGHT","Hauteur (en pixels)");
 define("_AM_MARQUEE_SCRAMOUNT","Nombre de pixels<br />entre deux mouvements");
 define("_AM_MARQUEE_HSPACE","Espacement horizontal (en pixels)");
 define("_AM_MARQUEE_VSPACE","Espacement vertical (en pixels)");
-define("_AM_MARQUEE_SCRDELAY","Délai entre deux mouvements<br /> en millièmes de secondes ");
-define("_AM_MARQUEE_ERROR_MODIFY_DB","Erreur pendant la mise à jour de la base de données");
+define("_AM_MARQUEE_SCRDELAY","DÃ©lai entre deux mouvements<br /> en milliÃ¨mes de secondes ");
+define("_AM_MARQUEE_ERROR_MODIFY_DB","Erreur pendant la mise Ã  jour de la base de donnÃ©es");
 define("_AM_MARQUEE_SOURCE","source du contenu");
 define("_AM_MARQUEE_SOURCE_FIXED","Un texte fixe");
 ?>

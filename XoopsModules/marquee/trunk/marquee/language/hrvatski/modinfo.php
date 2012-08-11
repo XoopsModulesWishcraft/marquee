@@ -34,7 +34,7 @@ define("_MI_MARQUEE_BDESC_03",	"Prikaži klizni tekst 03");
 define("_MI_MARQUEE_BNAME_04",	"Klizni tekst 04");
 define("_MI_MARQUEE_BDESC_04",	"Prikaži klizni tekst 04");
 define("_MI_MARQUEE_MENU_01",	"Upravljanje kliznim tekstovima");
-define("_MI_MARQUEE_USE_KIOVI", "Koristi kiovi ?");
+define("_MI_MARQUEE_USE_KIOVI","Koristi kiovi ?");
 define("_MI_MARQUEE_USE_KIOVI_DESC","Ako je pronaðen onda æe se koristiti Kiovi");
 define("_MI_MARQUEE_METHOD","Naèin korištenja");
 define("_MI_MARQUEE_METHOD_DESC","Ako izaberete 'Marquee' naèin onda æe modul koristiti html marquee's tag, ova metoda nije kompatibilna sa svim navigatorima ali nudi puno opcija.<br>Ako izaberete 'dhtml' naèin, onda æe klizni tekst raditi sa više navigatora ali æe zahtjevati više koda na vašoj stranici i imat æete manje opcija");

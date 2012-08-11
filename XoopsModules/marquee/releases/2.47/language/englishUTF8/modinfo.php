@@ -29,7 +29,7 @@ define("_MI_MARQUEE_BDESC_03",	"Display marquee 03");
 define("_MI_MARQUEE_BNAME_04",	"Marquee 04");
 define("_MI_MARQUEE_BDESC_04",	"Display marquee 04");
 define("_MI_MARQUEE_MENU_01",	"Manage marquees");
-define("_MI_MARQUEE_USE_KIOVI", "Use kiovi ?");
+define("_MI_MARQUEE_USE_KIOVI","Use kiovi ?");
 define("_MI_MARQUEE_USE_KIOVI_DESC","If it is detected then Kiovi will be used");
 define("_MI_MARQUEE_METHOD","Method to use");
 define("_MI_MARQUEE_METHOD_DESC","If you select the 'Marquee' method then the module will use the html marquee's tag, this method is not compatible with all navigators but offers many options.<br>If you select the 'dhtml' method, then the marquee should run with more navigators but it will require more code in your page and you will have less options");
@@ -42,7 +42,7 @@ define("_MI_MARQUE_ITEMSCOUNT_DESC","When you select to use the content of anoth
 define("_MI_MARQUE_TITLELENGTH","Titles length");
 define("_MI_MARQUE_TITLELENGTH_DESC","Define the maximum lenght for the items titles (0=no limit)");
 
-define("_MI_MARQUEE_TEXT_EDITOR", "Text editor to use");
+define("_MI_MARQUEE_TEXT_EDITOR","Text editor to use");
 define("_MI_MARQUEE_FORM_COMPACT","Compact");
 define("_MI_MARQUEE_FORM_DHTML","DHTML");
 define("_MI_MARQUEE_FORM_SPAW","Spaw Editor");

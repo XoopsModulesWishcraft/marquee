@@ -42,7 +42,7 @@ define("_MI_MARQUE_ITEMSCOUNT","Nombre d'éléments");
 define("_MI_MARQUE_ITEMSCOUNT_DESC","Lorsque vous choisissez d'utiliser le contenu d'un autre module (et donc pas un texte fixe) pour créer des Marquees, c'est le nombre d'éléments à utiliser");
 define("_MI_MARQUE_TITLELENGTH","Longeur des titres");
 define("_MI_MARQUE_TITLELENGTH_DESC","Définissez la longueur des titres des éléments (0=pas de limite)");
-define("_MI_MARQUEE_TEXT_EDITOR", "Editeur de texte à utiliser");
+define("_MI_MARQUEE_TEXT_EDITOR","Editeur de texte à utiliser");
 define("_MI_MARQUEE_FORM_COMPACT","Compact");
 define("_MI_MARQUEE_FORM_DHTML","DHTML");
 define("_MI_MARQUEE_FORM_SPAW","Spaw Editor");

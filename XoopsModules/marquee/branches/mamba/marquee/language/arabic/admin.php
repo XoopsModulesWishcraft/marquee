@@ -2,52 +2,52 @@
 /**
  * ****************************************************************************
  * Marquee - MODULE FOR XOOPS
- * Copyright (c) Hervй Thouzard (http://www.herve-thouzard.com)
+ * Copyright (c) Hervпњљ Thouzard (http://www.herve-thouzard.com)
  * ****************************************************************************
  */
 
-define("_AM_MARQUEE_CONFIG","≈Џѕ«ѕ«  «б√‘—Ў…");
-define("_AM_MARQUEE_ID","«бежн…");
-define("_AM_MARQUEE_GENERALSET", "ќн«—«  «б»—д«гћ" );
-define("_AM_MARQUEE_MODULEADMIN","≈ѕ«—… «б»—д«гћ");
-define("_AM_MARQUEE_DIRECTION","«б≈ ћ«е« ");
-define("_AM_MARQUEE_BEHAVIOUR","«б”бжя");
-define("_AM_MARQUEE_STOP"," жёЁ Џдѕ ж÷Џ «бг«ж”");
-define("_AM_MARQUEE_CONTENT","«бгЌ жм");
-define("_AM_MARQUEE_EDIT"," Ќ—н—");
-define("_AM_MARQUEE_DELETE","Ќ–Ё");
-define("_AM_MARQUEE_DIRECTION1","гд «б‘г«б ббнгнд");
-define("_AM_MARQUEE_DIRECTION2","гд «бнгнд бб‘г«б");
-define("_AM_MARQUEE_DIRECTION3","гд √”Ёб ≈бм √Џбм");
-define("_AM_MARQUEE_DIRECTION4","гд √Џбм ≈бм √”Ёб");
+define("_AM_MARQUEE_CONFIG","пњљпњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_ID","пњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_GENERALSET","пњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_MODULEADMIN","пњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_DIRECTION","пњљпњљпњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_BEHAVIOUR","пњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_STOP","пњљпњљпњљпњљ пњљпњљпњљ пњљпњљпњљ пњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_CONTENT","пњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_EDIT","пњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_DELETE","пњљпњљпњљ");
+define("_AM_MARQUEE_DIRECTION1","пњљпњљ пњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_DIRECTION2","пњљпњљ пњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_DIRECTION3","пњљпњљ пњљпњљпњљпњљ пњљпњљпњљ пњљпњљпњљпњљ");
+define("_AM_MARQUEE_DIRECTION4","пњљпњљ пњљпњљпњљпњљ пњљпњљпњљ пњљпњљпњљпњљ");
 define("_AM_MARQUEE_BEHAVIOUR1","scroll");
 define("_AM_MARQUEE_BEHAVIOUR2","slide");
 define("_AM_MARQUEE_BEHAVIOUR3","alternate");
-define("_AM_MARQUEE_ADDMARQUEE","√÷Ё ‘—нЎ");
-define("_AM_MARQUEE_ACTION","«б√ѕ«Ѕ");
-define("_AM_MARQUEE_LOOP"," ѕжн—");
-define("_AM_MARQUEE_INFINITELOOP","џн— гЌѕжѕ");
-define("_AM_MARQUEE_ALIGN","«’ЎЁ«Ё");
-define("_AM_MARQUEE_ALIGN1","√Џбм");
-define("_AM_MARQUEE_ALIGN2","√”Ёб");
-define("_AM_MARQUEE_ALIGN3","ж”Ў");
-define("_AM_MARQUEE_ADDBUTTON","√÷Ё");
-define("_AM_MARQUEE_RESETBUTTON","≈Џ«ѕ…  дўнг");
-define("_AM_MARQUEE_ERROR_ADD_MARQUEE","ќЎ√ - «бЌёжб «бгЎбж»… бг н г  Џ»∆ е«");
-define("_AM_MARQUEE_ADDED_OK"," г ≈÷«Ё… «б‘—нЎ »дћ«Ќ");
-define("_AM_MARQUEE_DBUPDATED"," г  ЌѕнЋ ё«Џѕ… «б»н«д«  »дћ«Ќ");
-define("_AM_MARQUEE_RUSUREDEL","еб √д  г √яѕ гд √дя  —нѕ Ќ–Ё е–« «бг«ѕ…њ");
-define("_AM_MARQUEE_UPDATE"," ЌѕнЋ");
-define("_AM_MARQUEE_BGCOLOR","бжд «бќбЁн… <br />(б«  д”м ж÷Џ «бЏб«г… #<br /> Ён Ќ«б… ≈ќ н«—я б—г“ «ббжд)");
-define("_AM_MARQUEE_WIDTH","«бЏ—÷ (»«б»ня”б √ж «бд”»… «бг∆жн…)");
-define("_AM_MARQUEE_HEIGHT","«б≈— Ё«Џ (»«б»ня”б)");
-define("_AM_MARQUEE_SCRAMOUNT","Џѕѕ «б≈б Ё«Ё");
-define("_AM_MARQUEE_HSPACE","«бг”«Ќ… «б√Ёён… (»«б»ня”б)");
-define("_AM_MARQUEE_VSPACE","«бг”«Ќ… «б—∆”н… (»«б»ня”б)");
-define("_AM_MARQUEE_SCRDELAY"," √ќн— »нд<br />«бЌ—я нд »«бгнбнЋ«дн…");
-define("_AM_MARQUEE_ERROR_MODIFY_DB","нжћѕ ќЎ√ »ндг« н г  ЌѕнЋ ё«Џѕ… «б»н«д« ");
-define("_AM_MARQUEE_SOURCE","г’ѕ— «бгЌ жм");
-define("_AM_MARQUEE_SOURCE_FIXED","гЏ«бћ… «бд’");
+define("_AM_MARQUEE_ADDMARQUEE","пњљпњљпњљ пњљпњљпњљпњљ");
+define("_AM_MARQUEE_ACTION","пњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_LOOP","пњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_INFINITELOOP","пњљпњљпњљ пњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_ALIGN","пњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_ALIGN1","пњљпњљпњљпњљ");
+define("_AM_MARQUEE_ALIGN2","пњљпњљпњљпњљ");
+define("_AM_MARQUEE_ALIGN3","пњљпњљпњљ");
+define("_AM_MARQUEE_ADDBUTTON","пњљпњљпњљ");
+define("_AM_MARQUEE_RESETBUTTON","пњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_ERROR_ADD_MARQUEE","пњљпњљпњљ - пњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљпњљ пњљпњљ пњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_ADDED_OK","пњљпњљ пњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_DBUPDATED","пњљпњљ пњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_RUSUREDEL","пњљпњљ пњљпњљпњљ пњљпњљпњљпњљпњљ пњљпњљ пњљпњљпњљ пњљпњљпњљпњљ пњљпњљпњљ пњљпњљпњљ пњљпњљпњљпњљпњљ…њ");
+define("_AM_MARQUEE_UPDATE","пњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_BGCOLOR","пњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ <br />(пњљпњљ пњљпњљпњљпњљ пњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ #<br /> пњљпњљ пњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљ пњљпњљпњљпњљпњљ)");
+define("_AM_MARQUEE_WIDTH","пњљпњљпњљпњљпњљ (пњљпњљпњљпњљпњљпњљпњљпњљ пњљпњљ пњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ)");
+define("_AM_MARQUEE_HEIGHT","пњљпњљпњљпњљпњљпњљпњљпњљ (пњљпњљпњљпњљпњљпњљпњљпњљ)");
+define("_AM_MARQUEE_SCRAMOUNT","пњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_HSPACE","пњљпњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ (пњљпњљпњљпњљпњљпњљпњљпњљ)");
+define("_AM_MARQUEE_VSPACE","пњљпњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ (пњљпњљпњљпњљпњљпњљпњљпњљ)");
+define("_AM_MARQUEE_SCRDELAY","пњљпњљпњљпњљпњљ пњљпњљпњљ<br />пњљпњљпњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_ERROR_MODIFY_DB","пњљпњљпњљпњљ пњљпњљпњљ пњљпњљпњљпњљпњљ пњљпњљпњљ пњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_SOURCE","пњљпњљпњљпњљ пњљпњљпњљпњљпњљпњљпњљ");
+define("_AM_MARQUEE_SOURCE_FIXED","пњљпњљпњљпњљпњљпњљ пњљпњљпњљпњљ");
 
 //2.4.8
 define("_AM_MARQUEE_BGCOLOR_SHORT","Background color");

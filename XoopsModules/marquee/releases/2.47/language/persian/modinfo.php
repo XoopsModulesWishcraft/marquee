@@ -34,7 +34,7 @@ define("_MI_MARQUEE_BDESC_03",	"نمایش سايبان 03");
 define("_MI_MARQUEE_BNAME_04",	"سايبان 04");
 define("_MI_MARQUEE_BDESC_04",	"نمایش سايبان 04");
 define("_MI_MARQUEE_MENU_01",	"مدیریت سايبان ها");
-define("_MI_MARQUEE_USE_KIOVI", "استفاده از ویرایشگر Kiovi؟");
+define("_MI_MARQUEE_USE_KIOVI","استفاده از ویرایشگر Kiovi؟");
 define("_MI_MARQUEE_USE_KIOVI_DESC","اگر این گزینه فعال باشد از ویرایشگر Kiovi استفاده میشود.");
 define("_MI_MARQUEE_METHOD","روش استفاده");
 define("_MI_MARQUEE_METHOD_DESC","اگر شما روش 'سايبان' را انتخاب کنید آن وقت ماژول از تک html سایبان استفاده میکند, این روش با همه هدایت گر ها سازگار نیست ولی گزینه های زیادی را در دسترس قرار میدهد.<br>اگر شما روش 'dhtml' را انتخاب کنید, سایبان با هدایت گر ها بیشتری اجرا میشود اما به کد های بیشتری در صفحه احتیاج دارد و شما گزینه های کمتری در اختیار خواهید داشت");

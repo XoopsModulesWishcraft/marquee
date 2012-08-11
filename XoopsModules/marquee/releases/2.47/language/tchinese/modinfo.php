@@ -2,21 +2,21 @@
 /**
  * ****************************************************************************
  * Marquee - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) Hervï¿½ Thouzard of Instant Zero (http://www.instant-zero.com)
  * ****************************************************************************
  */
 
-define("_MI_MARQUEE_DESC",		"±Ò°Ê§A©Ò³]©wªº±²¶b¤å¦r");
-define("_MI_MARQUEE_BNAME_01",	"±²¶b¤å¦r 01");
-define("_MI_MARQUEE_BDESC_01",	"Åã¥Ü±²¶b¤å¦r 01");
-define("_MI_MARQUEE_BNAME_02",	"±²¶b¤å¦r 02");
-define("_MI_MARQUEE_BDESC_02",	"Åã¥Ü±²¶b¤å¦r 02");
-define("_MI_MARQUEE_BNAME_03",	"±²¶b¤å¦r 03");
-define("_MI_MARQUEE_BDESC_03",	"Åã¥Ü±²¶b¤å¦r 03");
-define("_MI_MARQUEE_BNAME_04",	"±²¶b¤å¦r 04");
-define("_MI_MARQUEE_BDESC_04",	"Åã¥Ü±²¶b¤å¦r 04");
-define("_MI_MARQUEE_MENU_01",	"ºÞ²z±²¶b¤å¦r");
-define("_MI_MARQUEE_USE_KIOVI", "Use kiovi ?");
+define("_MI_MARQUEE_DESC",		"ï¿½Ò°Ê§Aï¿½Ò³]ï¿½wï¿½ï¿½ï¿½ï¿½ï¿½bï¿½ï¿½r");
+define("_MI_MARQUEE_BNAME_01",	"ï¿½ï¿½ï¿½bï¿½ï¿½r 01");
+define("_MI_MARQUEE_BDESC_01",	"ï¿½ï¿½Ü±ï¿½ï¿½bï¿½ï¿½r 01");
+define("_MI_MARQUEE_BNAME_02",	"ï¿½ï¿½ï¿½bï¿½ï¿½r 02");
+define("_MI_MARQUEE_BDESC_02",	"ï¿½ï¿½Ü±ï¿½ï¿½bï¿½ï¿½r 02");
+define("_MI_MARQUEE_BNAME_03",	"ï¿½ï¿½ï¿½bï¿½ï¿½r 03");
+define("_MI_MARQUEE_BDESC_03",	"ï¿½ï¿½Ü±ï¿½ï¿½bï¿½ï¿½r 03");
+define("_MI_MARQUEE_BNAME_04",	"ï¿½ï¿½ï¿½bï¿½ï¿½r 04");
+define("_MI_MARQUEE_BDESC_04",	"ï¿½ï¿½Ü±ï¿½ï¿½bï¿½ï¿½r 04");
+define("_MI_MARQUEE_MENU_01",	"ï¿½Þ²zï¿½ï¿½ï¿½bï¿½ï¿½r");
+define("_MI_MARQUEE_USE_KIOVI","Use kiovi ?");
 define("_MI_MARQUEE_USE_KIOVI_DESC","If it is detected then Kiovi will be used");
 define("_MI_MARQUEE_METHOD","Method to use");
 define("_MI_MARQUEE_METHOD_DESC","If you select the 'Marquee' method then the module will use the html marquee's tag, this method is not compatible with all navigators but offers many options.<br>If you select the 'dhtml' method, then the marquee should run with more navigators but it will require more code in your page and you will have less options");
