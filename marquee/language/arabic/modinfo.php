@@ -2,30 +2,30 @@
 /**
  * ****************************************************************************
  * Marquee - MODULE FOR XOOPS
- * Copyright (c) HervÈ Thouzard (http://www.herve-thouzard.com)
+ * Copyright (c) Herv√© Thouzard (http://www.herve-thouzard.com)
  * ****************************************************************************
  */
 
-define("_MI_MARQUEE_DESC",		"Ì„ﬂ‰ﬂ „‰ ≈‰‘«¡ ‰’Ê’Enable you to create scrolling texts (marquees)");
-define("_MI_MARQUEE_BNAME_01",	"«·‘—Ìÿ «·√Ê·");
-define("_MI_MARQUEE_BDESC_01",	"√⁄—÷ «·‘—Ìÿ «·√Ê·");
-define("_MI_MARQUEE_BNAME_02",	"«·‘—Ìÿ «·À«‰Ì");
-define("_MI_MARQUEE_BDESC_02",	"√⁄—÷ «·‘—Ìÿ «·À«‰Ì");
-define("_MI_MARQUEE_BNAME_03",	"«·‘—Ìÿ «·À«·À");
-define("_MI_MARQUEE_BDESC_03",	"√⁄—÷ «·‘—Ìÿ «·À«·À");
-define("_MI_MARQUEE_BNAME_04",	"«·‘—Ìÿ «·—«»⁄");
-define("_MI_MARQUEE_BDESC_04",	"√⁄—÷ «·‘—Ìÿ «·—«»⁄");
-define("_MI_MARQUEE_MENU_01",	"≈œ«—… «‘—ÿ… «·„Ê«÷Ì⁄");
-define("_MI_MARQUEE_USE_KIOVI", "«” Œœ„ kiovi ø");
-define("_MI_MARQUEE_USE_KIOVI_DESC","›Ì Õ«·…  „ ≈ÌÃ«œÂ ›”Ê› Ì „ «” Œœ«„ Kiovi ");
-define("_MI_MARQUEE_METHOD","«·ÿ—Ìﬁ… «· Ì ” ” Œœ„");
-define("_MI_MARQUEE_METHOD_DESC"," ›Ì Õ«·… «Œ Ì«—ﬂ ·‹ '«·‘—Ìÿ' ›≈‰ «·»—‰«„Ã ”Ì” Œœ„ ‘—Ìÿ htm tag, Â–Â «·ÿ—Ìﬁ… ·«   ‰«”» „⁄ Ã„Ì⁄ «·„” ﬂ‘›«  Ê ·ﬂ‰  ﬁœ„ ŒÌ«—«  ⁄œ…<br>›Ì Õ«·… «Œ Ì«—ﬂ ·ÿ—Ìﬁ… 'dhtml' method, ›≈‰ «·‘—Ìÿ ”Ê› Ì⁄„· „⁄ „” ﬂ‘›«  ⁄œÌœ… Ê ·ﬂ‰ Ì ÿ·» –·ﬂ ‘›—«  ⁄œ… »’›Õ ﬂ Ê ”ÌﬂÊ‰ ·Â ŒÌ«—«  √ﬁ·");
-define("_MI_MARQUEE_MARQUEE","«·‘—Ìÿ");
-define("_MI_MARQUEE_DHTML","Ã«›« ”ﬂ—Ì» ");
-define("_MI_MARQUEE_DATEFORMAT","’Ì€… «· «—ÌŒ");
-define("_MI_MARQUEE_DATEFORMAT_DESC","›÷·« √‘— ≈·Ï „” ‰œ«  PHP (http://fr.php.net/manual/en/function.date.php) ·„–Ìœ« „‰ «·„⁄·Ê„«  ⁄‰ ﬂÌ›Ì… «Œ Ì«— «·’Ì€…. ·«ÕŸ - ›Ì Õ«·… ·„  ﬁ„ »ÿ»«⁄… √Ì ‘Ì¡ ›”Ê› Ì „ «” Œœ«„ «· «—ÌŒ «·«› —«÷Ì");
-define("_MI_MARQUE_ITEMSCOUNT","⁄œ«œ«·„Ê«÷Ì⁄");
-define("_MI_MARQUE_ITEMSCOUNT_DESC","⁄‰œ„«  Œ «— «” Œœ«„ „Õ ÊÏ √Ì »—‰«„Ã ¬Œ—(Ê ·Ì” ‰’ „⁄Ì‰) ·⁄„· √‘—ÿ… ›Â–Â ÂÌ ⁄œœ «·„Ê«÷Ì⁄ «· Ì ”Ê›  œ—Ã ›Ì «·ﬁ«∆„…");
+define("_MI_MARQUEE_DESC",		"√≠√£√ü√§√ü √£√§ √Ö√§√î√á√Å √§√ï√¶√ïEnable you to create scrolling texts (marquees)");
+define("_MI_MARQUEE_BNAME_01",	"√á√°√î√ë√≠√ò √á√°√É√¶√°");
+define("_MI_MARQUEE_BDESC_01",	"√É√ö√ë√ñ √á√°√î√ë√≠√ò √á√°√É√¶√°");
+define("_MI_MARQUEE_BNAME_02",	"√á√°√î√ë√≠√ò √á√°√ã√á√§√≠");
+define("_MI_MARQUEE_BDESC_02",	"√É√ö√ë√ñ √á√°√î√ë√≠√ò √á√°√ã√á√§√≠");
+define("_MI_MARQUEE_BNAME_03",	"√á√°√î√ë√≠√ò √á√°√ã√á√°√ã");
+define("_MI_MARQUEE_BDESC_03",	"√É√ö√ë√ñ √á√°√î√ë√≠√ò √á√°√ã√á√°√ã");
+define("_MI_MARQUEE_BNAME_04",	"√á√°√î√ë√≠√ò √á√°√ë√á√à√ö");
+define("_MI_MARQUEE_BDESC_04",	"√É√ö√ë√ñ √á√°√î√ë√≠√ò √á√°√ë√á√à√ö");
+define("_MI_MARQUEE_MENU_01",	"√Ö√è√á√ë√â √á√î√ë√ò√â √á√°√£√¶√á√ñ√≠√ö");
+define("_MI_MARQUEE_USE_KIOVI","√á√ì√ä√é√è√£ kiovi ¬ø");
+define("_MI_MARQUEE_USE_KIOVI_DESC","√ù√≠ √ç√á√°√â √ä√£ √Ö√≠√å√á√è√• √ù√ì√¶√ù √≠√ä√£ √á√ì√ä√é√è√á√£ Kiovi ");
+define("_MI_MARQUEE_METHOD","√á√°√ò√ë√≠√û√â √á√°√ä√≠ √ì√ä√ì√ä√é√è√£");
+define("_MI_MARQUEE_METHOD_DESC"," √ù√≠ √ç√á√°√â √á√é√ä√≠√á√ë√ü √°√ú '√á√°√î√ë√≠√ò' √ù√Ö√§ √á√°√à√ë√§√á√£√å √ì√≠√ì√ä√é√è√£ √î√ë√≠√ò htm tag, √•√ê√• √á√°√ò√ë√≠√û√â √°√á √ä√ä√§√á√ì√à √£√ö √å√£√≠√ö √á√°√£√ì√ä√ü√î√ù√á√ä √¶ √°√ü√§ √ä√û√è√£ √é√≠√á√ë√á√ä √ö√è√â<br>√ù√≠ √ç√á√°√â √á√é√ä√≠√á√ë√ü √°√ò√ë√≠√û√â 'dhtml' method, √ù√Ö√§ √á√°√î√ë√≠√ò √ì√¶√ù √≠√ö√£√° √£√ö √£√ì√ä√ü√î√ù√á√ä √ö√è√≠√è√â √¶ √°√ü√§ √≠√ä√ò√°√à √ê√°√ü √î√ù√ë√á√ä √ö√è√â √à√ï√ù√ç√ä√ü √¶ √ì√≠√ü√¶√§ √°√• √é√≠√á√ë√á√ä √É√û√°");
+define("_MI_MARQUEE_MARQUEE","√á√°√î√ë√≠√ò");
+define("_MI_MARQUEE_DHTML","√å√á√ù√á √ì√ü√ë√≠√à√ä");
+define("_MI_MARQUEE_DATEFORMAT","√ï√≠√õ√â √á√°√ä√á√ë√≠√é");
+define("_MI_MARQUEE_DATEFORMAT_DESC","√ù√ñ√°√á √É√î√ë √Ö√°√¨ √£√ì√ä√§√è√á√ä PHP (http://fr.php.net/manual/en/function.date.php) √°√£√ê√≠√è√á√∞ √£√§ √á√°√£√ö√°√¶√£√á√ä √ö√§ √ü√≠√ù√≠√â √á√é√ä√≠√á√ë √á√°√ï√≠√õ√â. √°√á√ç√ô - √ù√≠ √ç√á√°√â √°√£ √ä√û√£ √à√ò√à√á√ö√â √É√≠ √î√≠√Å √ù√ì√¶√ù √≠√ä√£ √á√ì√ä√é√è√á√£ √á√°√ä√á√ë√≠√é √á√°√á√ù√ä√ë√á√ñ√≠");
+define("_MI_MARQUE_ITEMSCOUNT","√ö√è√á√è√á√°√£√¶√á√ñ√≠√ö");
+define("_MI_MARQUE_ITEMSCOUNT_DESC","√ö√§√è√£√á √ä√é√ä√á√ë √á√ì√ä√é√è√á√£ √£√ç√ä√¶√¨ √É√≠ √à√ë√§√á√£√å √Ç√é√ë(√¶ √°√≠√ì √§√ï √£√ö√≠√§) √°√ö√£√° √É√î√ë√ò√â √ù√•√ê√• √•√≠ √ö√è√è √á√°√£√¶√á√ñ√≠√ö √á√°√ä√≠ √ì√¶√ù √ä√è√ë√å √ù√≠ √á√°√û√á√Ü√£√â");
 define("_MI_MARQUE_TITLELENGTH","Titles length");
-define("_MI_MARQUE_TITLELENGTH_DESC","Õœœ «·ÿÊ· «·√ﬁ’Ï ·⁄‰Ê«‰ «·„Ê«÷Ì⁄ (0 = ⁄œœ €Ì— „Õœœ)");
+define("_MI_MARQUE_TITLELENGTH_DESC","√ç√è√è √á√°√ò√¶√° √á√°√É√û√ï√¨ √°√ö√§√¶√á√§ √á√°√£√¶√á√ñ√≠√ö (0 = √ö√è√è √õ√≠√ë √£√ç√è√è)");
 ?>
